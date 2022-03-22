@@ -2,7 +2,7 @@ module test
 (
 input a
 
-output b
+output wire b
 );
 
 assign b =  a;
