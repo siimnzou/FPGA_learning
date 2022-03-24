@@ -45,7 +45,7 @@ data_trans data_trans_inst
     . clk   (clk  ),
     . rst_n (rst_n),
     . sign  (1'b0 ),    // 1表示负号 ， 0表示正号（不显示）
-    . point (),
+    . point (6'b001010),
 
     .sel (sel),
     .seg (seg)

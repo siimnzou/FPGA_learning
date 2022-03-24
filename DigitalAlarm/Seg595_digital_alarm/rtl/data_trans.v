@@ -11,23 +11,25 @@ module data_trans
 );
 
 parameter CNT_1MS_MAX = 16'd50000;
-parameter ZERO   = 8'hc0,
-          ONE    = 8'hf9,
-          TWO    = 8'ha4,
-          THREE  = 8'hb0,
-          FOUR   = 8'h99,
-          FIVE   = 8'h92,
-          SIX    = 8'h82,
-          SENVEN = 8'hf8,
-          EIGHT  = 8'h80,
-          NING   = 8'h90,
+parameter ZERO   = 7'b1000000,
+          ONE    = 7'b1111001,
+          TWO    = 7'b0100100,
+          THREE  = 7'b0110000,
+          FOUR   = 7'b0011001,
+          FIVE   = 7'b0010010,
+          SIX    = 7'b0000010,
+          SENVEN = 7'b1111000,
+          EIGHT  = 7'b0000000,
+          NING   = 7'b0010000,
           SIGN   = 8'b1011_1111,  
           NONE   = 8'hff;
+
 wire [3:0] data0,data1,data2,data3,data4,data5;
-reg  [23:0 ] data_reg;
+wire  [23:0 ] data_reg;
 reg  [15:0 ] cnt_clk;
 reg  [2 :0 ]  cnt_sel;
 reg  [3 :0 ]  disp_num; // 4'd10 代表负号 4'd11 表示不显示
+reg           dot_disp;
 
 // 此处可以替换为更加节省资源的BCD转换方法
 
@@ -38,8 +40,10 @@ assign data3  = (data/1000) % 10;
 assign data4  = (data/10000) % 10;
 assign data5  = (data/100000) % 10;
 
+assign data_reg = {data5,data4,data3,data2,data1,data0};
 
-always @(posedge clk or negedge rst_n) begin
+// 以下代码作用是检测符号位并且当高位为0时不显示，此处数码管为0也需要显示，故注释
+/*always @(posedge clk or negedge rst_n) begin
     if(!rst_n)
         data_reg <= 24'd0;
     else if (sign == 1'b0 && data5 != 4'd0) 
@@ -66,7 +70,7 @@ always @(posedge clk or negedge rst_n) begin
         data_reg <= {4'd11,4'd11,4'd11,4'd11,4'd11,data0};
     else 
         data_reg <= {4'd11,4'd11,4'd11,4'd11,4'd11,4'd0};
-end
+end*/
 
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n)
@@ -119,25 +123,32 @@ always @(posedge clk or negedge rst_n) begin
         endcase
 end 
 
-// 根据disp_num 来使得数码管显示对应数值显示
+// 是否点亮小数点位
+always @(posedge clk or negedge rst_n) begin
+    if(!rst_n)
+        dot_disp <= 1'b0;
+    else 
+        dot_disp <= point[cnt_sel];
+end
 
+// 根据disp_num 来使得数码管显示对应数值显示
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n)
         seg <= 8'b11111111;
     else 
         case(disp_num)
-            4'd0 : seg <= ZERO   ;
-            4'd1 : seg <= ONE    ;
-            4'd2 : seg <= TWO    ;
-            4'd3 : seg <= THREE  ;
-            4'd4 : seg <= FOUR   ;
-            4'd5 : seg <= FIVE   ;
-            4'd6 : seg <= SIX    ;
-            4'd7 : seg <= SENVEN ;
-            4'd8 : seg <= EIGHT  ;
-            4'd9 : seg <= NING   ;
-            4'd10: seg <= SIGN   ;
-            4'd11: seg <= NONE   ;
+            4'd0 : seg <= {dot_disp,ZERO  };   
+            4'd1 : seg <= {dot_disp,ONE   };
+            4'd2 : seg <= {dot_disp,TWO   };
+            4'd3 : seg <= {dot_disp,THREE };
+            4'd4 : seg <= {dot_disp,FOUR  };
+            4'd5 : seg <= {dot_disp,FIVE  };
+            4'd6 : seg <= {dot_disp,SIX   };
+            4'd7 : seg <= {dot_disp,SENVEN};
+            4'd8 : seg <= {dot_disp,EIGHT };
+            4'd9 : seg <= {dot_disp,NING  };
+            4'd10: seg <= SIGN;
+            4'd11: seg <= NONE;
             default: seg <= NONE ;
         endcase
 end
