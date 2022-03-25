@@ -1,7 +1,7 @@
 # FPGA_learning
-用于个人学习的记录
+# FPGA_learning
+**用于个人的学习记录**
+## HDLBits 刷题
+[HDL Bits](https://github.com/siimnzou/FPGA_learning/HDL_bits)
 
-HDLbits 刷题记录
-
-自行开发的小项目
-1.6位8段数码管实现电子时钟
+## 自行开发的小项目
