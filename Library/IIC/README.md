@@ -9,7 +9,7 @@ EEPROM为ATMEL 公司 AT24C64芯片。
 代码编写参考野火《FPGA Verilog 开发实战指南 基于 Intel Cyclone IV》  以及[【接口时序】6、IIC总线的原理与Verilog实现](https://www.cnblogs.com/liujinggang/p/9656358.html)。
 ### SignalTap II 波形抓取
 
-以下为实验上板后对于单字节读写时序的波形抓取
+以下为实验上板后对于单字节读写时序的波形抓取  
 **读时序**
 
 ![IIC读时序.png](https://s2.loli.net/2022/03/30/FED2bOBuwfIUXpy.png)
