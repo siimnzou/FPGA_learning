@@ -1,0 +1,19 @@
+
+State Machine - |iic_eeprom|iic_ctrl:iic_ctrl_inst|state
+Name state.NACK state.RD_DATA state.ACK5 state.RD_DEV_ADDR state.START2 state.STOP state.ACK4 state.WR_DATA state.ACK3 state.WR_DATA_ADDR_L state.ACK2 state.WR_DATA_ADDR_H state.ACK1 state.WR_DEV_ADDR state.START state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.START 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.WR_DEV_ADDR 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.ACK1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.WR_DATA_ADDR_H 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.ACK2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.WR_DATA_ADDR_L 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.ACK3 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.WR_DATA 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.ACK4 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.STOP 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.START2 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.RD_DEV_ADDR 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ACK5 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.RD_DATA 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.NACK 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
