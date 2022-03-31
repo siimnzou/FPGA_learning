@@ -68,10 +68,10 @@ assign addr_low  = addr[7:0];
 assign scl             =  (scl_cnt <= HALF_MAX) ? 1'b1 : 1'b0         ;  // 产生时钟线
 assign scl_low_flag      =  (scl_cnt == THREE_QUART_MAX - 1)? 1'b1 : 1'b0   ;  // 产生时钟线低电平中央的标志信号
 assign scl_high_flag     =  (scl_cnt == QUART_MAX)? 1'b1 : 1'b0         ;  // 产生时钟线高电平中央的标志信号
-assign scl_down_edge_flag    =  (scl_cnt == EDGE_MAX)? 1'b1 : 1'b0      ;  // 产生时钟线下降沿的标志信号
+//assign scl_down_edge_flag    =  (scl_cnt == EDGE_MAX)? 1'b1 : 1'b0      ;  // 产生时钟线下降沿的标志信号
 
 // 产生一个计数器来生成1MHz的scl 
-always @(posedge clk or negedge rst_n)
+always @(posedge clk or negedge rst_n) begin
     if (!rst_n)
         scl_cnt <= 11'd0;
     else if (scl_en == 1'b1 && scl_cnt == DIV_FREQ - 1)
@@ -80,9 +80,10 @@ always @(posedge clk or negedge rst_n)
         scl_cnt <= scl_cnt + 1'b1;
     else 
         scl_cnt <= 11'd0;
+end
 
 //产生一个scl使能信号来控制只有当有写和读任务的时候才进行工作
-always @(posedge clk or negedge rst_n)
+always @(posedge clk or negedge rst_n) begin
     if (!rst_n)
         scl_en <= 1'b0;
     else if (wr_en == 1'b1 || rd_en == 1'b1 )
@@ -91,6 +92,8 @@ always @(posedge clk or negedge rst_n)
         scl_en <= 1'b0;
     else 
         scl_en <= scl_en;
+end
+
 
 //使用ack_valid信号来判断是否传入了正确的应答信号
 always @(posedge clk or negedge rst_n)begin
@@ -213,7 +216,7 @@ always @(posedge clk ) begin
 end
 
 //比特计数器的赋值
-always @(posedge clk or negedge rst_n)
+always @(posedge clk or negedge rst_n) begin
     if (!rst_n)
        cnt_bit <= 3'd0;
     else if (scl_low_flag == 1'b1 && cnt_bit == 3'd7)
@@ -227,9 +230,10 @@ always @(posedge clk or negedge rst_n)
         cnt_bit <= cnt_bit + 1'b1;   
     else 
         cnt_bit <= cnt_bit;
+end
 
 //sda_reg的赋值 
-always @(posedge clk or negedge rst_n)
+always @(posedge clk or negedge rst_n) begin
     if (!rst_n)
         sda_reg <= 1'b1;
     else if (state == START)
@@ -258,10 +262,10 @@ always @(posedge clk or negedge rst_n)
         sda_reg <= 1'b0;
     else 
         sda_reg <= sda_reg;
-
+end
 
 //sda_en信号的赋值，sda_en信号在ACK器件都应该为低电平，此时需要将sda赋高阻态以接收信号
-always @(posedge clk or negedge rst_n)
+always @(posedge clk or negedge rst_n) begin
     if (!rst_n)
        sda_en <= 1'b1;
     else if ((state == ACK1 ||
@@ -278,20 +282,21 @@ always @(posedge clk or negedge rst_n)
         sda_en <= 1'b1;
     else 
         sda_en <= sda_en;
-
+end
 
 
 //完成信号的赋值
-always @(posedge clk or negedge rst_n)
+always @(posedge clk or negedge rst_n) begin
     if (!rst_n)
        done_flag <= 1'b0;
     else if (state == STOP && scl_high_flag == 1'b1)
         done_flag <= 1'b1;
     else 
         done_flag <= 1'b0;
+end
 
 //IIC 总线模式的赋值
-always @ (posedge clk or negedge rst_n)
+always @ (posedge clk or negedge rst_n) begin
     if (!rst_n)
        iic_mode <= 1'b0;        
     else if (wr_en == 1'b1)
@@ -300,12 +305,14 @@ always @ (posedge clk or negedge rst_n)
         iic_mode <= 1'b0;
     else 
         iic_mode <= iic_mode;
+end
 
-always @ (posedge clk or negedge rst_n)
+always @ (posedge clk or negedge rst_n)begin
     if (!rst_n)
         rd_data_reg <= 8'd0;
     else if (state == RD_DATA && scl_high_flag == 1'b1)
         rd_data_reg[7-cnt_bit]  <=  sda_in;
+end
 
 // sda 作为输入输出，需要用这种方式来进行控制
 assign sda        =     (sda_en == 1'b1)? sda_reg : 1'bz  ; 
