@@ -21,34 +21,34 @@ always @(posedge clk ) begin
         case (state)
             A :  
                 if(!w)
-                    state = B;
-                else 
                     state = A;
+                else 
+                    state = B;
             B :  
                 if(!w)
-                    state = C;
-                else 
                     state = D;
+                else 
+                    state = C;
             C :  
                 if(!w)
-                    state = E;
-                else
                     state = D;
+                else
+                    state = E;
             D :  
                 if(!w)
-                    state = F;
-                else 
                     state = A;
+                else 
+                    state = F;
             E :  
                 if(!w)
-                    state = E;
-                else 
                     state = D;
+                else 
+                    state = E;
             F :  
                 if(!w)
-                    state = C;
-                else 
                     state = D;
+                else 
+                    state = C;
             default:
                 state = A;
         endcase

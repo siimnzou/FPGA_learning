@@ -14,6 +14,6 @@ always @(posedge clk ) begin
     
 end
 
-assign out = out_reg[0]
+assign out = out_reg[0];
 
 endmodule

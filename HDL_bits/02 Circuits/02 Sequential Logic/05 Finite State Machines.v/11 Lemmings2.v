@@ -22,7 +22,7 @@ always @(posedge clk or posedge areset) begin
     else
         case(state)
             LEFT :
-                if (!ground)
+                if (!ground)  //  题意中是跌落优先，放前面
                     state <= FALL_LEFT;
                 else if(bump_left)
                     state <= RIGHT;

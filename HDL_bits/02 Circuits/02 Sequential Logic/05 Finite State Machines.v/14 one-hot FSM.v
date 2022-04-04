@@ -7,7 +7,7 @@ module top_module(
 
 //
 
-assign next_state[0] = (!in && (~(state[5] || state[6])) ) ;
+assign next_state[0] = (!in && (state[0] || state[1] || state[2]|| state[3]|| state[4]|| state[7]|| state[8]|| state[9]) ) ;
 assign next_state[1] = (state[0] && in || in && state[8]|| in && state[9] );
 assign next_state[2] = (state[1] && in);
 assign next_state[3] = (state[2] && in);

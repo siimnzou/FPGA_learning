@@ -34,6 +34,7 @@ always @(posedge clk) begin
         endcase    
 end
 
+ // 如果IDLE状态中出现了开始信号，则开始计数，除去第一个数据后还需要另外2个数据
 always @(posedge clk) begin
     if (reset)
         cnt_byte <= 2'd0 ;
@@ -53,11 +54,6 @@ always @(posedge clk ) begin
     else 
         done <= 1'b0;
 end
-    // State transition logic (combinational)
-
-    // State flip-flops (sequential)
- 
-    // Output logic
 
 endmodule
 

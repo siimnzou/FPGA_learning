@@ -1,3 +1,5 @@
+// 这个题好像没法用到时序逻辑？？
+
 module top_module (
     input clk,
     input [2:0] y,
@@ -15,7 +17,7 @@ parameter S0 = 3'b000,
 reg [2:0] state; 
 reg [2:0] next_state;
 
-always @(posedge) begin
+always @(*) begin
         case (y)
                 S0 :
                     if(x) 
@@ -46,6 +48,7 @@ always @(posedge) begin
                     next_state = S0;
         endcase                     
 end
+
 
 assign z = (y == S3 || y == S4);
 assign Y0 = next_state[0];
