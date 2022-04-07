@@ -15,8 +15,6 @@ output reg      done_flag   ,     //完成标志
 output reg    [7:0]  rd_data_reg  //读到的数据
 );
 
-parameter DEV_ADDR_RD = 8'b10100111;
-parameter DEV_ADDR_WR = 8'b10100110;
 
 parameter DIV_FREQ = 10'd50; //定义器件的工作频率。这里1M所以用50
 
@@ -42,7 +40,8 @@ parameter IDLE                 =   4'd0      ,   //状态机各状态定义
           RD_DATA              =   4'd14     ,
           NACK                 =   4'd15     ;
 
-
+wire    [7:0]   dev_addr_rd = {dev_addr,1'b1};
+wire    [7:0]   dev_addr_wr = {dev_addr,1'b0};
 
 wire            scl_low_flag    ; // 时钟线低电平中央的标志信号
 wire            scl_high_flag   ; // 时钟线高电平中央的标志信号
@@ -243,7 +242,7 @@ always @(posedge clk or negedge rst_n) begin
     else if (state == START2 && scl_high_flag == 1'b1)
         sda_reg <= 1'b0;
     else if (state == WR_DEV_ADDR && assign_flag == 1'b1)
-        sda_reg <= DEV_ADDR_WR[7 - cnt_bit];    
+        sda_reg <= dev_addr_wr[7 - cnt_bit];    
     else if (state == WR_DATA_ADDR_H && assign_flag == 1'b1)
         sda_reg <= addr_high[7 - cnt_bit];
     else if (state == WR_DATA_ADDR_L && assign_flag == 1'b1)
@@ -251,7 +250,7 @@ always @(posedge clk or negedge rst_n) begin
     else if (state == WR_DATA && assign_flag == 1'b1)
         sda_reg <= data[7 - cnt_bit];
     else if (state == RD_DEV_ADDR && assign_flag == 1'b1)
-        sda_reg <= DEV_ADDR_RD[7 - cnt_bit];
+        sda_reg <= dev_addr_rd[7 - cnt_bit];
     else if (state == STOP && assign_flag == 1'b1)
         sda_reg <= 1'b0;
     else if (state == STOP && scl_high_flag == 1'b1)
