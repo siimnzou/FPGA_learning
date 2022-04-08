@@ -96,8 +96,8 @@ SDRAM_INIT SDRAM_INIT_INST
 sdram_model_plus SDRAM_MODULE_INST
 (
     .Dq(), 
-    .Addr(init_addr),
-    .Ba(init_ba),
+    .Addr(sdram_addr),
+    .Ba(sdram_ba),
     .Clk(clk_100_shift), 
     .Cke(1'b1), 
     .Cs_n(sdram_cmd[3]), 
