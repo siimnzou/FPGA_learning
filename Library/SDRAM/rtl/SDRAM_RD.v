@@ -8,11 +8,11 @@ module SDRAM_RD
     input   [15:0]    rd_data,    
     input   [9:0]     rd_burst_len,  // 采用页突发，一页512个，采用突发停止模式，可以实现任意长度的写入
 
-    output reg [3:0]  rd_cmd,
+    output reg [3:0]   rd_cmd,
     output wire        rd_ack,
     output wire        rd_end,
-    output reg [1:0]  rd_ba,
-    output reg [12:0] rd_sdram_addr,
+    output reg [1:0]   rd_ba,
+    output reg [12:0]  rd_sdram_addr,
     output wire [15:0] rd_sdram_data
 
 );
@@ -148,7 +148,7 @@ always @(posedge clk or negedge rst_n) begin
         cnt_clk <= cnt_clk;
 end
 
-assign rd_ack = (state == RD_DATA && cnt_clk >= 1 && cnt_clk <= rd_burst_len);
+assign rd_ack = (state == RD_DATA && cnt_clk >= 0 && cnt_clk <= rd_burst_len-1);
 assign rd_end = (state == RD_END);
 
 
