@@ -1,0 +1,445 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/FPGA_learning/Library/SDRAM/quartusprj/simulation/modelsim
+T_opt
+!s110 1649661094
+VPVZ=JbXWGWhJ9DLC8`meY1
+04 13 4 work TB_UART_SDRAM fast 0
+=1-002b67689534-6253d4a6-b5-99b4
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+vclk_gen
+Z2 !s110 1649661091
+!i10b 1
+!s100 <LXkHgc`OoYNc`:jbWN4D3
+!s11b 2QJ<HZ<_67U`m]Mg6>[9=1
+IOoY9?`3AZNeZBEOQQkjj51
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1649321930
+8G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/clk_gen/clk_gen.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/clk_gen/clk_gen.v
+Z4 L0 40
+Z5 OL;L;2019.2;69
+r1
+!s85 0
+31
+Z6 !s108 1649661091.000000
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/clk_gen/clk_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/clk_gen|G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/clk_gen/clk_gen.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/clk_gen -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vclk_gen_altpll
+R2
+!i10b 1
+!s100 Vl;HliODXd?QnHghVboOo0
+!s11b kLEFnPQ`8T0Xi=WiI7d6o2
+IQEoO:hb5WHHAmNOYSkPhc0
+R3
+R0
+w1649569418
+8G:/FPGA_learning/Library/SDRAM/quartusprj/db/clk_gen_altpll.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/db/clk_gen_altpll.v
+L0 31
+R5
+r1
+!s85 0
+31
+R6
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/db/clk_gen_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/db|G:/FPGA_learning/Library/SDRAM/quartusprj/db/clk_gen_altpll.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vFIFO_READ
+R2
+!i10b 1
+!s100 gGRl2?n@Ya>9Z8UACZo[U1
+!s11b dLNi7Z1GmQZ^9>;az2zzg1
+I]E7V:^?<AW9zoEE39Xg<e2
+R3
+R0
+w1649661058
+8G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/FIFO_READ.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/FIFO_READ.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/FIFO_READ.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl|G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/FIFO_READ.v|
+!i113 0
+R7
+Z8 !s92 -vlog01compat -work work +incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@f@i@f@o_@r@e@a@d
+vread_fifo
+R2
+!i10b 1
+!s100 igW`ZAeD^U2`57DR3<GM31
+!s11b FW78S879;L;4eP`GAa_om0
+IU5j^S796=_WiJMi]h@AXM0
+R3
+R0
+w1649572926
+8G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/read_fifo/read_fifo.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/read_fifo/read_fifo.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/read_fifo/read_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/read_fifo|G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/read_fifo/read_fifo.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/read_fifo -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vSDRAM
+R2
+!i10b 1
+!s100 z:TaRR7icA2LfYFKZIWE43
+!s11b ^Te`<AhImfjEkD1bP^Xj]0
+ISiLXbBHM<8eEQc3H2O@`B0
+R3
+R0
+w1649575414
+8G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl|G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM.v|
+!i113 0
+R7
+R8
+R1
+n@s@d@r@a@m
+vSDRAM_ARBIT
+R2
+!i10b 1
+!s100 nQR;amjG?85TCmW@aDH3z1
+!s11b ^K0AH6DUL?03QQF5f:4WR3
+I14jXPNHN1nL]>RdoVaS<m0
+R3
+R0
+w1649491753
+8G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_ARBIT.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_ARBIT.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_ARBIT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl|G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_ARBIT.v|
+!i113 0
+R7
+R8
+R1
+n@s@d@r@a@m_@a@r@b@i@t
+vSDRAM_AREF
+R2
+!i10b 1
+!s100 YJC>KjR=>]m`UaeWEl;`^3
+!s11b <c@RcaTl@<hgiTz4BWGKe0
+I119FjE_<m91;h4eCcCBVN3
+R3
+R0
+w1649336210
+8G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_AREF.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_AREF.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_AREF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl|G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_AREF.v|
+!i113 0
+R7
+R8
+R1
+n@s@d@r@a@m_@a@r@e@f
+vSDRAM_CTRL
+R2
+!i10b 1
+!s100 A3c>Cae@VDSGA:OEKzn`m3
+!s11b 2Hm5z5U>c_7[_MTfc0[012
+Iki=UA_B:VU;F;Ua`e@P@C1
+R3
+R0
+w1649493408
+8G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_CTRL.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_CTRL.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_CTRL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl|G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_CTRL.v|
+!i113 0
+R7
+R8
+R1
+n@s@d@r@a@m_@c@t@r@l
+vsdram_fifo
+R2
+!i10b 1
+!s100 6Y;Cki`9_G<2^mJmG:GOS2
+!s11b QblmoYIVNDBF]8FjCTJ;j1
+I4LX<3`ZF=1LoZG=4KEMe40
+R3
+R0
+w1649564013
+8G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/sdram_fifo/sdram_fifo.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/sdram_fifo/sdram_fifo.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/sdram_fifo/sdram_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/sdram_fifo|G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/sdram_fifo/sdram_fifo.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/ip_core/sdram_fifo -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vSDRAM_FIFO
+R2
+!i10b 1
+!s100 E9HiB5QAh761<H@S^7eNI0
+!s11b UmYEO18obb1PZ@`dzmj5^0
+Ik=<FbCS8dko<dN3Zc=dDF0
+R3
+R0
+w1649595732
+8G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_FIFO.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_FIFO.v
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_FIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl|G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_FIFO.v|
+!i113 0
+R7
+R8
+R1
+n@s@d@r@a@m_@f@i@f@o
+vSDRAM_INIT
+R2
+!i10b 1
+!s100 MEf@48TR]eX:09^R4S_SZ2
+!s11b [gYa74_^g]6FjFVozYLiE1
+IOR_1Hje`ak=4]Xnm`>G7D0
+R3
+R0
+w1649335895
+8G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_INIT.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_INIT.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_INIT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl|G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_INIT.v|
+!i113 0
+R7
+R8
+R1
+n@s@d@r@a@m_@i@n@i@t
+vsdram_model_plus
+R2
+!i10b 1
+!s100 <4K<]MgN]NM^EOiRTBVMS3
+!s11b 1JJdL]?La2^A=mX3A@XN71
+IA;D^EC>f;7mzDT_7JEV6h2
+R3
+R0
+w1616823549
+8G:/FPGA_learning/Library/SDRAM/quartusprj/../sim/sdram_model_plus.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/../sim/sdram_model_plus.v
+L0 56
+R5
+r1
+!s85 0
+31
+R6
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/../sim/sdram_model_plus.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../sim|G:/FPGA_learning/Library/SDRAM/quartusprj/../sim/sdram_model_plus.v|
+!i113 0
+R7
+Z9 !s92 -vlog01compat -work work +incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vSDRAM_RD
+Z10 !s110 1649661092
+!i10b 1
+!s100 HMk0RP3mHN8YXjOzZKTNV0
+!s11b Z94BOkX<fN@BaN[R^i6F=0
+I2k2]=5[maol3@4Al6VeSl0
+R3
+R0
+w1649587599
+8G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_RD.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_RD.v
+L0 1
+R5
+r1
+!s85 0
+31
+Z11 !s108 1649661092.000000
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_RD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl|G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_RD.v|
+!i113 0
+R7
+R8
+R1
+n@s@d@r@a@m_@r@d
+vSDRAM_WR
+R10
+!i10b 1
+!s100 ]n=7EDhD5Z8AESjcSah_K2
+!s11b BZ3Y8l>hOHL28QL]F][Rb2
+I[ACdo4k^gl<9YLER31jT;3
+R3
+R0
+w1649404112
+8G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_WR.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_WR.v
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_WR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl|G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/SDRAM_WR.v|
+!i113 0
+R7
+R8
+R1
+n@s@d@r@a@m_@w@r
+vTB_UART_SDRAM
+R2
+!i10b 1
+!s100 m9>bZRcE?>zAmdW0j<:K_0
+!s11b dR5[FkjW[6Q9cJ3MiBdA13
+I97:BeZTk<Y<_>R1:8;CRF2
+R3
+R0
+w1649589949
+8G:/FPGA_learning/Library/SDRAM/quartusprj/../sim/TB_UART_SDRAM.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/../sim/TB_UART_SDRAM.v
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/../sim/TB_UART_SDRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../sim|G:/FPGA_learning/Library/SDRAM/quartusprj/../sim/TB_UART_SDRAM.v|
+!i113 0
+R7
+R9
+R1
+n@t@b_@u@a@r@t_@s@d@r@a@m
+vuart_rx
+Z12 !s110 1649661090
+!i10b 1
+!s100 _^M^9[[c6OLVG6W433UQb0
+!s11b AS]YGKi3GT3XlIbIk_<fc3
+ImLJ1FYR61zU7TcZG=JmaS1
+R3
+R0
+w1646311192
+8G:/FPGA_learning/Library/SDRAM/rtl/uart_rx.v
+FG:/FPGA_learning/Library/SDRAM/rtl/uart_rx.v
+L0 1
+R5
+r1
+!s85 0
+31
+Z13 !s108 1649661090.000000
+!s107 G:/FPGA_learning/Library/SDRAM/rtl/uart_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/rtl|G:/FPGA_learning/Library/SDRAM/rtl/uart_rx.v|
+!i113 0
+R7
+Z14 !s92 -vlog01compat -work work +incdir+G:/FPGA_learning/Library/SDRAM/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vUART_SDRAM
+R10
+!i10b 1
+!s100 P3S9f[9e6I>i>;^@EZ[Zm2
+!s11b 8Tdeo7Ii_=CTM=n9WmNYB2
+IZO4l>Y1B@SR@V:KN<FC6G2
+R3
+R0
+w1649582522
+8G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/UART_SDRAM.v
+FG:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/UART_SDRAM.v
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/UART_SDRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl|G:/FPGA_learning/Library/SDRAM/quartusprj/../rtl/UART_SDRAM.v|
+!i113 0
+R7
+R8
+R1
+n@u@a@r@t_@s@d@r@a@m
+vuart_tx
+R12
+!i10b 1
+!s100 X?V>1h>NYM15^I]V^3eIj1
+!s11b 4JCVMVJ8lHdh]`EEb>nB_3
+I9=8_GdPMNEUc_c1JgXgdI1
+R3
+R0
+w1646229369
+8G:/FPGA_learning/Library/SDRAM/rtl/uart_tx.v
+FG:/FPGA_learning/Library/SDRAM/rtl/uart_tx.v
+L0 1
+R5
+r1
+!s85 0
+31
+R13
+!s107 G:/FPGA_learning/Library/SDRAM/rtl/uart_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/SDRAM/rtl|G:/FPGA_learning/Library/SDRAM/rtl/uart_tx.v|
+!i113 0
+R7
+R14
+R1
