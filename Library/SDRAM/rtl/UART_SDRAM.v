@@ -13,7 +13,7 @@ module UART_SDRAM
     output wire        sdram_we_n,
     output wire [1:0]  sdram_ba,
     output wire [12:0] sdram_addr,
-    output wire [1:0]      sdram_dqm ,
+    output wire [1:0]  sdram_dqm ,
     inout  wire [15:0] sdram_dq   
 );
 

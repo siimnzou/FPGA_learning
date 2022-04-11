@@ -13,7 +13,7 @@ module FIFO_READ
 
 parameter BAUD_CNT_MAX = 13'd5207;
 
-reg          fifo_wr_en ;
+wire          fifo_wr_en ;
 wire  [9:0]  fifo_data_num;
 reg          rd_flag ;
 reg  [12:0]  baud_cnt ;
@@ -21,15 +21,16 @@ reg  [3:0]   bit_cnt ;
 reg          bit_flag ;
 reg          fifo_rd_en;
 reg  [9:0]   cnt_read ;
+reg          rd_en_reg ;
 
-
+assign fifo_wr_en = rd_en && rd_en_reg;
 
 always @(posedge clk or negedge rst_n) begin
     if(~rst_n)
         rd_en <= 1'b0;
     else if (rd_fifo_num == brust_len)
         rd_en <= 1'b1;
-    else if (fifo_data_num == brust_len - 2)
+    else if (fifo_data_num == brust_len - 1)
         rd_en <= 1'b0;
     else 
         rd_en <= rd_en;
@@ -37,9 +38,9 @@ end
 
 always @(posedge clk or negedge rst_n) begin
     if(~rst_n)
-        fifo_wr_en <= 1'b0;
+       rd_en_reg <= 1'b0;
     else 
-        fifo_wr_en <= rd_en;
+        rd_en_reg <= rd_en;
 end
 
 always @(posedge clk or negedge rst_n) begin

@@ -148,7 +148,7 @@ always @(posedge clk or negedge rst_n) begin
         cnt_clk <= cnt_clk;
 end
 
-assign rd_ack = (state == RD_DATA && cnt_clk >= 0 && cnt_clk <= rd_burst_len-1);
+assign rd_ack = (state == RD_DATA && cnt_clk > 0 && cnt_clk <= rd_burst_len);
 assign rd_end = (state == RD_END);
 
 

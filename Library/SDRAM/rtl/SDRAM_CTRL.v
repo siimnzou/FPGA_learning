@@ -8,7 +8,7 @@ module SDRAM_CTRL
     input  [15:0]     sdram_wr_data,
     input  [23:0]     sdram_wr_addr,
     input  [9:0]      sdram_wr_burst_len,
-    output wire        sdram_wr_ack,
+    output wire       sdram_wr_ack,
 
     input              sdram_rd_req,
     input  [23:0]      sdram_rd_addr,
