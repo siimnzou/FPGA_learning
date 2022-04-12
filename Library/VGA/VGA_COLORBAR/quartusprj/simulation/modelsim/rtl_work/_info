@@ -1,0 +1,162 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/simulation/modelsim
+T_opt
+!s110 1649767010
+Vo6R7QA]j9khj5DDzEal8V1
+04 15 4 work TB_VGA_COLORBAR fast 0
+=1-002b67689534-62557262-25b-124d4
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+vclk_gen
+Z2 !s110 1649767008
+!i10b 1
+!s100 z>iSADiQa60kI6o83C>VW0
+!s11b hEPVcG>l?58ab431;?_?B3
+I:m7j^U>lR77eRgnRlAMWn1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1649763033
+8G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/ip_core/clk_gen/clk_gen.v
+FG:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/ip_core/clk_gen/clk_gen.v
+L0 40
+Z4 OL;L;2019.2;69
+r1
+!s85 0
+31
+Z5 !s108 1649767008.000000
+!s107 G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/ip_core/clk_gen/clk_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/ip_core/clk_gen|G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/ip_core/clk_gen/clk_gen.v|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/ip_core/clk_gen -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vclk_gen_altpll
+Z7 !s110 1649767009
+!i10b 1
+!s100 ?HdD1]zE7`kllBYP`o`[_3
+!s11b d8J6`aP3fAP:PA1PlZAg42
+I@GoH8c=AE^X;^n74go91?0
+R3
+R0
+w1649763465
+8G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/db/clk_gen_altpll.v
+FG:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/db/clk_gen_altpll.v
+L0 31
+R4
+r1
+!s85 0
+31
+Z8 !s108 1649767009.000000
+!s107 G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/db/clk_gen_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/db|G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/db/clk_gen_altpll.v|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vPIC_DATA
+R2
+!i10b 1
+!s100 P8iMeelW`P_E@oPK?FB<?0
+!s11b W<FdnDQhL3i3]W]mAP_dg1
+If?TGE4`Qjn7Do9c31`fAe0
+R3
+R0
+w1649766735
+8G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL/PIC_DATA.v
+FG:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL/PIC_DATA.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL/PIC_DATA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL|G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL/PIC_DATA.v|
+!i113 0
+R6
+Z9 !s92 -vlog01compat -work work +incdir+G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@p@i@c_@d@a@t@a
+vTB_VGA_COLORBAR
+R7
+!i10b 1
+!s100 Mn88I4baM98Z<FdAiBA3K0
+!s11b KRPB@cRBl_05JhF@`R4QK1
+IB^iUIj>84gB<@Rk]RO?@00
+R3
+R0
+w1649766995
+8G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/../Sim/TB_VGA_COLORBAR.v
+FG:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/../Sim/TB_VGA_COLORBAR.v
+L0 2
+R4
+r1
+!s85 0
+31
+R8
+!s107 G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/../Sim/TB_VGA_COLORBAR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/../Sim|G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/../Sim/TB_VGA_COLORBAR.v|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+G:/FPGA_learning/Library/VGA/VGA_COLORBAR/quartusprj/../Sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@t@b_@v@g@a_@c@o@l@o@r@b@a@r
+vVGA_COLORBAR
+R2
+!i10b 1
+!s100 [NJObd4DVeaO_c2@DSQZ:3
+!s11b o0Y2]^_N@zBa68HdS]W0h3
+I>U?bX>K0:UQj`4gGKj3W33
+R3
+R0
+w1649763428
+8G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL/VGA_COLORBAR.v
+FG:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL/VGA_COLORBAR.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL/VGA_COLORBAR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL|G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL/VGA_COLORBAR.v|
+!i113 0
+R6
+R9
+R1
+n@v@g@a_@c@o@l@o@r@b@a@r
+vVGA_CTRL
+R2
+!i10b 1
+!s100 1Lg0bgE>ZBX_Q:X^J6m151
+!s11b b;fRA21@<4`DZmeaEoWfJ2
+I>V6Aj7654go[2b3;KLcY@2
+R3
+R0
+w1649766727
+8G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL/VGA_CTRL.v
+FG:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL/VGA_CTRL.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL/VGA_CTRL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL|G:/FPGA_learning/Library/VGA/VGA_COLORBAR/RTL/VGA_CTRL.v|
+!i113 0
+R6
+R9
+R1
+n@v@g@a_@c@t@r@l
