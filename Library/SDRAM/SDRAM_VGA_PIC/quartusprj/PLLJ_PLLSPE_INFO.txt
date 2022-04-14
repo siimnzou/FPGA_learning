@@ -1,0 +1,5 @@
+PLL_Name	CLK_GEN:CLK_GEN_inst|altpll:altpll_component|CLK_GEN_altpll:auto_generated|pll1
+PLLJITTER	NA
+PLLSPEmax	84
+PLLSPEmin	-53
+
