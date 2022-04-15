@@ -1,7 +1,9 @@
 # VGA接口
-## 一、介绍
+## 项目一：[VGA_COLORBAR](https://github.com/siimnzou/FPGA_learning/edit/main/Library/VGA/VGA_COLORBAR)
+主要实现了通过VGA显示等宽10色彩条，了解VGA的接口时序。
+### 一、介绍
 VGA的显示原理: 采用扫描的方式，将像素点在行同步信号和场同步信号的同步下，按照从上到下，从左到右的顺序扫描到显示屏上，扫描完一帧后重新回到最开始进行扫描。
-## 二、 时序标准
+### 二、 时序标准
 根据VESA VGA时序标准，VGA的时序可以分为行同步时序和场同步时序。  
 <div align=center>
 <a href="https://sm.ms/image/rY3j5ApebN2qTQi" target="_blank"><img src="https://s2.loli.net/2022/04/15/rY3j5ApebN2qTQi.png"  ></a>
@@ -50,7 +52,7 @@ VGA的显示原理: 采用扫描的方式，将像素点在行同步信号和场
 图4 场时序标准
 </div> 
 
-## 三、硬件部分
+### 三、硬件部分
 <div align=center>
 <a href="https://sm.ms/image/5FrvpMBPVbz8NGt" target="_blank"><img src="https://s2.loli.net/2022/04/15/5FrvpMBPVbz8NGt.png" width="800px" ></a>  
   
@@ -64,5 +66,5 @@ VGA 接口共有15个引脚,其中123 分别为红基色，绿基色，蓝基色
 
 采用野火征途系列开发板，传入三基色通道的信号为FPGA的数字信号经过权电阻网络转换为模拟信号后传入，采用的图像显示模式为RGB565模式，三路模拟输入的电压范围为0-0.714V,从低到高颜色分别加深。
 
-## 四、设计框图
+### 四、设计框图
 <a href="https://sm.ms/image/yvOSts6HpJhNiBV" target="_blank"><img src="https://s2.loli.net/2022/04/15/yvOSts6HpJhNiBV.png" ></a>
