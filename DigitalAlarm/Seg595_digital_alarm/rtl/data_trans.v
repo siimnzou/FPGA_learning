@@ -1,3 +1,7 @@
+/*************************************************************
+    6位八段数码管的数据转换模块
+    把20位的数剧转换成6位BCD码然后转换为hc595的串行以及并行信号
+*************************************************************/
 module data_trans
 (
     input [19:0] data,
@@ -24,14 +28,17 @@ parameter ZERO   = 7'b1000000,
           SIGN   = 8'b1011_1111,  
           NONE   = 8'hff;
 
-wire [3:0] data0,data1,data2,data3,data4,data5;
+reg [3:0] data0,data1,data2,data3,data4,data5;
 wire  [23:0 ] data_reg;
 reg  [15:0 ] cnt_clk;
 reg  [2 :0 ]  cnt_sel;
 reg  [3 :0 ]  disp_num; // 4'd10 代表负号 4'd11 表示不显示
 reg           dot_disp;
+reg  [4 :0 ]  cnt_shift;
+reg           shift_en ;
+reg  [43:0]   data_shift;
 
-// 此处可以替换为更加节省资源的BCD转换方法
+/* 此处可以替换为更加节省资源的BCD转换方法
 
 assign data0  =  data % 10;
 assign data1  = (data/10) % 10;
@@ -41,6 +48,67 @@ assign data4  = (data/10000) % 10;
 assign data5  = (data/100000) % 10;
 
 assign data_reg = {data5,data4,data3,data2,data1,data0};
+*/
+// BCD转换方法
+always @(posedge clk or negedge rst_n) begin
+    if(!rst_n)
+        cnt_shift <= 5'd0;
+    else if (shift_en && cnt_shift == 5'd21)
+        cnt_shift <= 5'd0;
+    else if (shift_en)
+        cnt_shift <= cnt_shift + 1'b1;
+    else
+        cnt_shift <= cnt_shift;
+end
+
+always @(posedge clk or negedge rst_n) begin
+    if(!rst_n)
+        shift_en <= 1'b0;
+    else
+        shift_en <= ~shift_en;
+end
+
+always @(posedge clk or negedge rst_n) begin
+    if(!rst_n)
+        data_shift <= 44'b0;
+    else if (cnt_shift == 5'd0)
+        data_shift <= {24'b0,data};
+    else if (cnt_shift <= 5'd20 && !shift_en)
+        begin
+            data_shift[23:20]   <=  (data_shift[23:20] > 4) ? (data_shift[23:20] + 2'd3) : (data_shift[23:20]);
+            data_shift[27:24]   <=  (data_shift[27:24] > 4) ? (data_shift[27:24] + 2'd3) : (data_shift[27:24]);
+            data_shift[31:28]   <=  (data_shift[31:28] > 4) ? (data_shift[31:28] + 2'd3) : (data_shift[31:28]);
+            data_shift[35:32]   <=  (data_shift[35:32] > 4) ? (data_shift[35:32] + 2'd3) : (data_shift[35:32]);
+            data_shift[39:36]   <=  (data_shift[39:36] > 4) ? (data_shift[39:36] + 2'd3) : (data_shift[39:36]);
+            data_shift[43:40]   <=  (data_shift[43:40] > 4) ? (data_shift[43:40] + 2'd3) : (data_shift[43:40]);            
+        end
+    else if (cnt_shift <= 5'd20 && shift_en)
+        data_shift <= data_shift << 1;
+    else 
+        data_shift <= data_shift;
+end
+
+always @(posedge clk or negedge rst_n) begin
+    if(!rst_n)
+        begin
+        data0 <= 4'b0;
+        data1 <= 4'b0;
+        data2 <= 4'b0;
+        data3 <= 4'b0;
+        data4 <= 4'b0;
+        data5 <= 4'b0;
+        end
+    else if(cnt_shift == 5'd21)
+        begin
+        data0  <=  data_shift[23:20];
+        data1  <=  data_shift[27:24];
+        data2  <=  data_shift[31:28];
+        data3  <=  data_shift[35:32];
+        data4  <=  data_shift[39:36];
+        data5  <=  data_shift[43:40];
+        end
+end
+
 
 // 以下代码作用是检测符号位并且当高位为0时不显示，此处数码管为0也需要显示，故注释
 /*always @(posedge clk or negedge rst_n) begin

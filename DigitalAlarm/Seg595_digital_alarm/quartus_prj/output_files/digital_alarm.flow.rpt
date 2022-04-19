@@ -1,0 +1,155 @@
+Flow report for digital_alarm
+Fri Mar 25 15:37:00 2022
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Fri Mar 25 15:37:00 2022       ;
+; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Full Version ;
+; Revision Name                      ; digital_alarm                               ;
+; Top-level Entity Name              ; top_digital_alarm                           ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE10F17C8                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 2,286 / 10,320 ( 22 % )                     ;
+;     Total combinational functions  ; 2,279 / 10,320 ( 22 % )                     ;
+;     Dedicated logic registers      ; 170 / 10,320 ( 2 % )                        ;
+; Total registers                    ; 170                                         ;
+; Total pins                         ; 8 / 180 ( 4 % )                             ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 423,936 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 03/25/2022 15:36:26 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; digital_alarm       ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                          ;
++--------------------------------------+------------------------------------------------------------------------------+---------------+-------------------+-----------------+
+; Assignment Name                      ; Value                                                                        ; Default Value ; Entity Name       ; Section Id      ;
++--------------------------------------+------------------------------------------------------------------------------+---------------+-------------------+-----------------+
+; COMPILER_SIGNATURE_ID                ; 186418500916.164819378623740                                                 ; --            ; --                ; --              ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                           ; --            ; --                ; tb_clk_data_gen ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                           ; --            ; --                ; tb_time_set     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                           ; --            ; --                ; tb_hc595_ctrl   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                           ; --            ; --                ; tb_data_trans   ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_time_set                                                                  ; --            ; --                ; eda_simulation  ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                                  ; --            ; --                ; eda_simulation  ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                                                           ; <None>        ; --                ; --              ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                                              ; --            ; --                ; eda_simulation  ;
+; EDA_TEST_BENCH_FILE                  ; ../sim/tb_clk_data_gen.v                                                     ; --            ; --                ; tb_clk_data_gen ;
+; EDA_TEST_BENCH_FILE                  ; ../sim/tb_time_set.v                                                         ; --            ; --                ; tb_time_set     ;
+; EDA_TEST_BENCH_FILE                  ; ../../../FPGA_learning/DigitalAlarm/Seg595_digital_alarm/sim/tb_hc595_ctrl.v ; --            ; --                ; tb_hc595_ctrl   ;
+; EDA_TEST_BENCH_FILE                  ; ../sim/tb_data_trans.v                                                       ; --            ; --                ; tb_data_trans   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_clk_data_gen                                                              ; --            ; --                ; tb_clk_data_gen ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_time_set                                                                  ; --            ; --                ; tb_time_set     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_hc595_ctrl                                                                ; --            ; --                ; tb_hc595_ctrl   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_data_trans                                                                ; --            ; --                ; tb_data_trans   ;
+; EDA_TEST_BENCH_NAME                  ; tb_hc595_ctrl                                                                ; --            ; --                ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_data_trans                                                                ; --            ; --                ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_clk_data_gen                                                              ; --            ; --                ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_time_set                                                                  ; --            ; --                ; eda_simulation  ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                                                         ; --            ; --                ; tb_clk_data_gen ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                                                         ; --            ; --                ; tb_time_set     ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                                                         ; --            ; --                ; tb_hc595_ctrl   ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                                                         ; --            ; --                ; tb_data_trans   ;
+; EDA_TIME_SCALE                       ; 1 ps                                                                         ; --            ; --                ; eda_simulation  ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                           ; --            ; --                ; --              ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                            ; --            ; --                ; --              ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                                                         ; --            ; --                ; --              ;
+; PARTITION_COLOR                      ; 16764057                                                                     ; --            ; top_digital_alarm ; Top             ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                                                        ; --            ; top_digital_alarm ; Top             ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                                                       ; --            ; top_digital_alarm ; Top             ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                          ; --            ; --                ; --              ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                        ; --            ; --                ; --              ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                                 ; --            ; --                ; --              ;
+; TOP_LEVEL_ENTITY                     ; top_digital_alarm                                                            ; digital_alarm ; --                ; --              ;
++--------------------------------------+------------------------------------------------------------------------------+---------------+-------------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4933 MB             ; 00:00:21                           ;
+; Fitter                    ; 00:00:09     ; 4.1                     ; 6279 MB             ; 00:00:17                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4747 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.7                     ; 4968 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4725 MB             ; 00:00:02                           ;
+; Total                     ; 00:00:28     ; --                      ; --                  ; 00:00:44                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; WINDOWS-LUUTAQT  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; WINDOWS-LUUTAQT  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; WINDOWS-LUUTAQT  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; WINDOWS-LUUTAQT  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; WINDOWS-LUUTAQT  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off digital_alarm -c digital_alarm
+quartus_fit --read_settings_files=off --write_settings_files=off digital_alarm -c digital_alarm
+quartus_asm --read_settings_files=off --write_settings_files=off digital_alarm -c digital_alarm
+quartus_sta digital_alarm -c digital_alarm
+quartus_eda --read_settings_files=off --write_settings_files=off digital_alarm -c digital_alarm
+
+
+

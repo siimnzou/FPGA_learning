@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Apr 19 21:51:32 2022
+Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Full Version
+Revision Name : VGA_digital_alarm
+Top-level Entity Name : VGA_digital_alarm
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 4,186 / 10,320 ( 41 % )
+    Total combinational functions : 4,086 / 10,320 ( 40 % )
+    Dedicated logic registers : 640 / 10,320 ( 6 % )
+Total registers : 640
+Total pins : 22 / 180 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

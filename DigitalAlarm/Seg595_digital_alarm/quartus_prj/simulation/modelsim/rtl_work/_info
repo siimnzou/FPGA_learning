@@ -1,0 +1,181 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/quartus_prj/simulation/modelsim
+T_opt
+!s110 1648193543
+V0<6]M1n1<DO??H?h?0;0J2
+04 11 4 work tb_time_set fast 0
+=1-002b67689534-623d7007-25f-5ee4
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+vclk_data_gen
+Z2 !s110 1648193541
+!i10b 1
+!s100 HV<Ac4D`D_^]0c^1=d^Oe2
+!s11b >DhT]hO6[L>D^5m1:UCjC1
+IXK<m?`XMHnZgDaE?56l`C3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1648189813
+8G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/clk_data_gen.v
+FG:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/clk_data_gen.v
+L0 1
+Z4 OL;L;2019.2;69
+r1
+!s85 0
+31
+Z5 !s108 1648193541.000000
+!s107 G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/clk_data_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl|G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/clk_data_gen.v|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -vlog01compat -work work +incdir+G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vdata_trans
+R2
+!i10b 1
+!s100 ^`ZSI@H]=K5;Td:Ti=?3J3
+!s11b ]BOWSW[@Yn4NZKNhJg>8d2
+INSAlZTbf^O8TW3X[1DBgi0
+R3
+R0
+w1648124504
+8G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/data_trans.v
+FG:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/data_trans.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/data_trans.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl|G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/data_trans.v|
+!i113 0
+R6
+R7
+R1
+vhc595_ctrl
+R2
+!i10b 1
+!s100 RZk0U[YAk2PoY_1mKjaR;0
+!s11b aM`h:?ZWJ4VNEUPgo4n<f3
+Ih7EdkM9CP?bfICbSo6<D02
+R3
+R0
+w1647954235
+8G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/hc595_ctrl.v
+FG:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/hc595_ctrl.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/hc595_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl|G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/hc595_ctrl.v|
+!i113 0
+R6
+R7
+R1
+vkey_filter
+!s110 1648193540
+!i10b 1
+!s100 QfAO0TDIOQQOUHT=E=87V3
+!s11b VMjKhn290^5LA;>4P75kQ0
+I6K<6D6M;<:B=V@5CJef1T3
+R3
+R0
+w1600821956
+8G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/key_filter.v
+FG:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/key_filter.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1648193540.000000
+!s107 G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/key_filter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl|G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/key_filter.v|
+!i113 0
+R6
+R7
+R1
+vtb_time_set
+R2
+!i10b 1
+!s100 ZQFYl73]iQ;LRk8MdBZdX0
+!s11b :koXWE8[n9S<@BFoT2Z<I0
+IVTXkEK_g?L6XOfAA;RozC3
+R3
+R0
+w1648193089
+8G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/quartus_prj/../sim/tb_time_set.v
+FG:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/quartus_prj/../sim/tb_time_set.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/quartus_prj/../sim/tb_time_set.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/quartus_prj/../sim|G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/quartus_prj/../sim/tb_time_set.v|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/quartus_prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtime_set
+R2
+!i10b 1
+!s100 ;8F5cO`PTnWoYSJ8^M_Zk3
+!s11b C```;JVTI>dGgali>mdLk2
+IT_>QFW_I79;3^=?bEimkj2
+R3
+R0
+w1648193522
+8G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/time_set.v
+FG:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/time_set.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/time_set.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl|G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/time_set.v|
+!i113 0
+R6
+R7
+R1
+vtop_digital_alarm
+R2
+!i10b 1
+!s100 ]RW>]XHY7OE>U7DVl]be=3
+!s11b N:?e5HMKN7L_X;]32Na4I2
+IF8LH66N0fHXiIRY2b[JE[1
+R3
+R0
+w1648190148
+8G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/top_digital_alarm.v
+FG:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/top_digital_alarm.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/top_digital_alarm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl|G:/FPGA_learning/DigitalAlarm/Seg595_digital_alarm/rtl/top_digital_alarm.v|
+!i113 0
+R6
+R7
+R1

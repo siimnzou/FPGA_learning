@@ -1,15 +1,21 @@
+/*************************************************************
+    时钟数据产生模块，用于产生输出的时钟数据
+    当外部传入工作使能为高时，进行计数，产生时间信息。
+    当工作使能为低时，可以设置当前时钟
+    配合外部传输的设置位置和设置数据完成时间计时起点的设置。
+*************************************************************/
 module clk_data_gen
 (
     input           clk,
     input           rst_n,
-    input  [3:0]    set_data,
-    input  [2:0]    set_pos,
-    input           set_flag,
-    input           work_en,
+    input  [3:0]    set_data,   //接收从时钟设置模块传过来的时钟数据
+    input  [2:0]    set_pos,    //接收从时钟设置模块传过来的设置位置（时分秒）
+    input           set_flag,   //接收从时钟设置模块传过来的设置信号
+    input           work_en,    //外部传入工作时钟，高电平才开始时分秒计数
     
-    output wire [5:0]  point,
-    output wire  [19:0] data,
-    output wire sign    
+    output wire [5:0]  point,   // 输出的小数点信号
+    output wire  [19:0] data,   // 输出的时钟数据
+    output wire sign            // 输出的符号位
 );
 
 parameter CNT_1S_MAX   = 26'd49_999_999,

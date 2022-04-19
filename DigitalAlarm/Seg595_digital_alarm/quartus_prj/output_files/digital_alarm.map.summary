@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Mar 25 15:36:38 2022
+Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Full Version
+Revision Name : digital_alarm
+Top-level Entity Name : top_digital_alarm
+Family : Cyclone IV E
+Total logic elements : 2,303
+    Total combinational functions : 2,278
+    Dedicated logic registers : 170
+Total registers : 170
+Total pins : 8
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

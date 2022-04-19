@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Apr 06 12:15:06 2022
+Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Full Version
+Revision Name : iic_adda
+Top-level Entity Name : IIC_ADDA
+Family : Cyclone IV E
+Total logic elements : 2,909
+    Total combinational functions : 1,299
+    Dedicated logic registers : 2,379
+Total registers : 2379
+Total pins : 8
+Total virtual pins : 0
+Total memory bits : 292,864
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
