@@ -1,4 +1,8 @@
-
+/*********************************************************************
+    字符信息获取模块，每个字符分别为128x128像素点
+    通过之前模块传入的字符数（char_num）、字符x坐标、字符y坐标获取
+    当前像素点的数据,传入pix_data模块，用于生成当前位置的rgb数据
+**********************************************************************/
 module CHAR_DATA
 (
     input       clk,
@@ -13,7 +17,8 @@ module CHAR_DATA
 
 reg [127:0] char [127:0] ;
 
-// 数字取模
+// 不同数字取模 
+
 always @(posedge clk or negedge rst_n) begin
     if (~rst_n)
         begin
@@ -1593,6 +1598,8 @@ always @(posedge clk or negedge rst_n) begin
         endcase
 end
 
+
+// 当收到字符数据请求的时候，向外部输出char_data的数据。
 always @(posedge clk or negedge rst_n) begin
     if (~rst_n)
         char_data <= 1'b0;

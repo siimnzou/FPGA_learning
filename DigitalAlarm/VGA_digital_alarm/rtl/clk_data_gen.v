@@ -45,6 +45,7 @@ always @(posedge clk or negedge rst_n) begin
         work_en_reg <= work_en;
 end
 
+// 用于设置完时间后实时改变时分秒的数据便于实时显示
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n)
         set_flag_reg <= 1'b0;
@@ -52,6 +53,7 @@ always @(posedge clk or negedge rst_n) begin
         set_flag_reg <= set_flag;
 end
 
+// 采集work_en的下降沿用于设置时所有寄存数据的清零
 assign work_en_down_edge = (!work_en) && (work_en_reg);
 
 always @(posedge clk or negedge rst_n) begin
@@ -64,6 +66,8 @@ always @(posedge clk or negedge rst_n) begin
     else 
         cnt_s_l_reg <= cnt_s_l_reg;
 end
+
+// 以下为设置时间寄存值的赋值，当工作使能信号下降沿的时候全部清零，然后根据对应的set_pos和set_data在set_flag的时候进行赋值
 
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n)
@@ -128,6 +132,8 @@ always @(posedge clk or negedge rst_n) begin
     else if (work_en == 1'b1)
         cnt_1s <= cnt_1s + 1'b1;    
 end
+
+// 在工作使能为高的时候进行计数，工作使能为低的时候完成设置信号的输入
 
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n)

@@ -1,5 +1,5 @@
 Assembler report for VGA_digital_alarm
-Tue Apr 19 21:51:35 2022
+Wed Apr 20 16:15:11 2022
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Apr 19 21:51:35 2022 ;
+; Assembler Status      ; Successful - Wed Apr 20 16:15:11 2022 ;
 ; Revision Name         ; VGA_digital_alarm                     ;
 ; Top-level Entity Name ; VGA_digital_alarm                     ;
 ; Family                ; Cyclone IV E                          ;
@@ -68,8 +68,8 @@ agreement for further details.
 ; Option         ; Setting                                                                                                ;
 +----------------+--------------------------------------------------------------------------------------------------------+
 ; Device         ; EP4CE10F17C8                                                                                           ;
-; JTAG usercode  ; 0x003226B5                                                                                             ;
-; Checksum       ; 0x003226B5                                                                                             ;
+; JTAG usercode  ; 0x0032CA32                                                                                             ;
+; Checksum       ; 0x0032CA32                                                                                             ;
 +----------------+--------------------------------------------------------------------------------------------------------+
 
 
@@ -79,13 +79,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Full Version
-    Info: Processing started: Tue Apr 19 21:51:34 2022
+    Info: Processing started: Wed Apr 20 16:15:10 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off VGA_digital_alarm -c VGA_digital_alarm
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4758 megabytes
-    Info: Processing ended: Tue Apr 19 21:51:35 2022
+    Info: Peak virtual memory: 4750 megabytes
+    Info: Processing ended: Wed Apr 20 16:15:11 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

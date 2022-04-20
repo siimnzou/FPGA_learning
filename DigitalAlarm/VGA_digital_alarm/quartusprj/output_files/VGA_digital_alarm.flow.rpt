@@ -1,5 +1,5 @@
 Flow report for VGA_digital_alarm
-Tue Apr 19 21:51:46 2022
+Wed Apr 20 16:15:22 2022
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Apr 19 21:51:46 2022       ;
+; Flow Status                        ; Successful - Wed Apr 20 16:15:22 2022       ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Full Version ;
 ; Revision Name                      ; VGA_digital_alarm                           ;
 ; Top-level Entity Name              ; VGA_digital_alarm                           ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE10F17C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 4,186 / 10,320 ( 41 % )                     ;
-;     Total combinational functions  ; 4,086 / 10,320 ( 40 % )                     ;
+; Total logic elements               ; 4,176 / 10,320 ( 40 % )                     ;
+;     Total combinational functions  ; 4,090 / 10,320 ( 40 % )                     ;
 ;     Dedicated logic registers      ; 640 / 10,320 ( 6 % )                        ;
 ; Total registers                    ; 640                                         ;
 ; Total pins                         ; 22 / 180 ( 12 % )                           ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/19/2022 21:50:32 ;
+; Start date & time ; 04/20/2022 16:14:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VGA_digital_alarm   ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id           ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------------+
-; COMPILER_SIGNATURE_ID                ; 186418500916.165037623207580          ; --            ; --          ; --                   ;
+; COMPILER_SIGNATURE_ID                ; 186418500916.165044245315964          ; --            ; --          ; --                   ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; tb_VGA_digital_alarm ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_VGA_digital_alarm                  ; --            ; --          ; eda_simulation       ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation       ;
@@ -108,12 +108,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:39     ; 1.0                     ; 5018 MB             ; 00:00:49                           ;
-; Fitter                    ; 00:00:19     ; 3.1                     ; 6330 MB             ; 00:00:37                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4758 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.3                     ; 5006 MB             ; 00:00:04                           ;
-; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4769 MB             ; 00:00:04                           ;
-; Total                     ; 00:01:07     ; --                      ; --                  ; 00:01:35                           ;
+; Analysis & Synthesis      ; 00:00:33     ; 1.0                     ; 4976 MB             ; 00:00:42                           ;
+; Fitter                    ; 00:00:20     ; 3.2                     ; 6328 MB             ; 00:00:38                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4750 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.3                     ; 5008 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4763 MB             ; 00:00:04                           ;
+; Total                     ; 00:01:01     ; --                      ; --                  ; 00:01:29                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
