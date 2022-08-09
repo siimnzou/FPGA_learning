@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../rtl/encode_1.v" \
+"../../../../../../rtl/hdmi_ctrl.v" \
+"../../../../../../rtl/par_to_ser.v" \
+"../../../../../../rtl/vga_ctrl.v" \
+"../../../../../../rtl/vga_pic.v" \
+"../../../../../../rtl/hdmi_colorbar.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

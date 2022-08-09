@@ -1,0 +1,32 @@
+# //  ModelSim SE-64 2019.2 Apr 17 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_par_to_ser_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.tb_par_to_ser xil_defaultlib.glbl 
+# Start time: 10:23:34 on Aug 09,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_par_to_ser(fast)
+# Loading work.par_to_ser(fast)
+# Loading unisims_ver.OSERDESE2(fast)
+# Loading secureip.B_OSERDESE2(fast)
+# Loading unisims_ver.OSERDESE2(fast__1)
+# Loading secureip.B_OSERDESE2(fast__1)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Causality operation skipped due to absence of debug database file
+# End time: 10:26:04 on Aug 09,2022, Elapsed time: 0:02:30
+# Errors: 5, Warnings: 1

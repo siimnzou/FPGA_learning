@@ -1,0 +1,19 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto d0908501eae94735845476b1731c977e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_par_to_ser_behav xil_defaultlib.tb_par_to_ser xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 8 for port 'par_data' [G:/xilinx_FPGA_prj/hdmi_colorbar/sim/tb_par_to_ser.v:31]
+WARNING: [VRFC 10-3705] select index 8 into 'par_data' is out of bounds [G:/xilinx_FPGA_prj/hdmi_colorbar/rtl/par_to_ser.v:96]
+WARNING: [VRFC 10-3705] select index 9 into 'par_data' is out of bounds [G:/xilinx_FPGA_prj/hdmi_colorbar/rtl/par_to_ser.v:97]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.OSERDESE2(DATA_WIDTH=10,TRISTATE...
+Compiling module unisims_ver.OSERDESE2(DATA_WIDTH=10,SERDES_M...
+Compiling module xil_defaultlib.par_to_ser
+Compiling module xil_defaultlib.tb_par_to_ser
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_par_to_ser_behav

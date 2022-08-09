@@ -1,0 +1,12 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+G:/xilinx_FPGA_prj/hdmi_colorbar/prj/hdmi_colorbar/hdmi_colorbar.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+G:/xilinx_FPGA_prj/hdmi_colorbar/rtl/encode_1.v,1611019691,verilog,,G:/xilinx_FPGA_prj/hdmi_colorbar/rtl/hdmi_ctrl.v,,encode_1,,,,,,,,
+G:/xilinx_FPGA_prj/hdmi_colorbar/rtl/hdmi_colorbar.v,1646903654,verilog,,,,hdmi_colorbar,,,,,,,,
+G:/xilinx_FPGA_prj/hdmi_colorbar/rtl/hdmi_ctrl.v,1646902507,verilog,,G:/xilinx_FPGA_prj/hdmi_colorbar/rtl/par_to_ser.v,,hdmi_ctrl,,,,,,,,
+G:/xilinx_FPGA_prj/hdmi_colorbar/rtl/par_to_ser.v,1660010783,verilog,,G:/xilinx_FPGA_prj/hdmi_colorbar/sim/tb_par_to_ser.v,,par_to_ser,,,,,,,,
+G:/xilinx_FPGA_prj/hdmi_colorbar/rtl/vga_ctrl.v,1659969933,verilog,,G:/xilinx_FPGA_prj/hdmi_colorbar/rtl/vga_pic.v,,vga_ctrl,,,,,,,,
+G:/xilinx_FPGA_prj/hdmi_colorbar/rtl/vga_pic.v,1646199344,verilog,,G:/xilinx_FPGA_prj/hdmi_colorbar/rtl/hdmi_colorbar.v,,vga_pic,,,,,,,,
+G:/xilinx_FPGA_prj/hdmi_colorbar/sim/tb_par_to_ser.v,1660011192,verilog,,,,tb_par_to_ser,,,,,,,,

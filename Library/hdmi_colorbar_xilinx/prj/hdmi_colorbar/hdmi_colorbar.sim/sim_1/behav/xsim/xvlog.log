@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/xilinx_FPGA_prj/hdmi_colorbar/sim/tb_par_to_ser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_par_to_ser
+INFO: [VRFC 10-2458] undeclared symbol par_clk, assumed default net type wire [G:/xilinx_FPGA_prj/hdmi_colorbar/sim/tb_par_to_ser.v:28]
+INFO: [VRFC 10-2458] undeclared symbol ser_clk, assumed default net type wire [G:/xilinx_FPGA_prj/hdmi_colorbar/sim/tb_par_to_ser.v:29]

@@ -1,0 +1,82 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Aug  9 11:29:28 2022
+| Host         : WINDOWS-LUUTAQT running 64-bit major release  (build 9200)
+| Command      : report_drc -file hdmi_colorbar_drc_routed.rpt -pb hdmi_colorbar_drc_routed.pb -rpx hdmi_colorbar_drc_routed.rpx
+| Design       : hdmi_colorbar
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 9
++---------+----------+----------------------------+------------+
+| Rule    | Severity | Description                | Violations |
++---------+----------+----------------------------+------------+
+| AVAL-70 | Warning  | OSERDES_DataRateTqTriWidth | 8          |
+| ZPS7-1  | Warning  | PS7 block required         | 1          |
++---------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+AVAL-70#1 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for hdmi_ctrl_inst/par_to_ser_blue/OSERDESE2_marster_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+AVAL-70#2 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for hdmi_ctrl_inst/par_to_ser_blue/OSERDESE2_slave_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+AVAL-70#3 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for hdmi_ctrl_inst/par_to_ser_clk/OSERDESE2_marster_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+AVAL-70#4 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for hdmi_ctrl_inst/par_to_ser_clk/OSERDESE2_slave_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+AVAL-70#5 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for hdmi_ctrl_inst/par_to_ser_green/OSERDESE2_marster_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+AVAL-70#6 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for hdmi_ctrl_inst/par_to_ser_green/OSERDESE2_slave_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+AVAL-70#7 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for hdmi_ctrl_inst/par_to_ser_red/OSERDESE2_marster_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+AVAL-70#8 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for hdmi_ctrl_inst/par_to_ser_red/OSERDESE2_slave_inst with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

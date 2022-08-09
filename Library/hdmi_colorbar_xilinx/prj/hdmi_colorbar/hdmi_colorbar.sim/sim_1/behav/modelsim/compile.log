@@ -1,0 +1,27 @@
+# do {tb_par_to_ser_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 10:23:15 on Aug 09,2022
+# vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/par_to_ser.v ../../../../../../sim/tb_par_to_ser.v 
+# -- Compiling module par_to_ser
+# -- Compiling module tb_par_to_ser
+# 
+# Top level modules:
+# 	tb_par_to_ser
+# End time: 10:23:15 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 10:23:15 on Aug 09,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:23:15 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
