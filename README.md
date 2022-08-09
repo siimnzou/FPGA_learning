@@ -19,4 +19,8 @@
 四. [按键消抖](https://github.com/siimnzou/FPGA_learning/tree/main/Library/key_fliter)  
 
 五. [VGA显示驱动](https://github.com/siimnzou/FPGA_learning/tree/main/Library/VGA)  
+
+六. [HDMI显示驱动](https://github.com/siimnzou/FPGA_learning/tree/main/Library/hdmi_colorbar_xilinx)  
+
+七. [ov5640摄像头驱动](https://github.com/siimnzou/FPGA_learning/tree/main/Library/OV5640)  
 	 
