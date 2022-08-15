@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.sim/sim_1/behav/modelsim
+T_opt
+!s110 1660563799
+VU_JFC=XAo6D9W<9Z7EG6j2
+04 15 4 work tb_touch_driver fast 0
+04 4 4 work glbl fast 0
+=1-047c16137fb1-62fa3157-112-6d2c
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.6d;65
+R0
+vglbl
+!s110 1660563844
+!i10b 1
+!s100 aGX4R92RO3^bD43HL2j:J2
+Ii@2]DfVnUU[WE=M5a<e[a3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1649976174
+8glbl.v
+Fglbl.v
+L0 6
+Z3 OL;L;10.6d;65
+r1
+!s85 0
+31
+!s108 1660563844.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtb_touch_driver
+!s10a 1660563609
+!s110 1660563618
+!i10b 1
+!s100 <;[1U4R9fUBcac5L^7YS@3
+IdWT`;iG4nBg<=YYA[nk_Z1
+R2
+R0
+w1660563609
+8../../../../../../sim/tb_touch_driver.v
+F../../../../../../sim/tb_touch_driver.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1660563618.000000
+Z4 !s107 ../../../../../../sim/tb_touch_driver.v|../../../../../../rtl/touch_driver.v|
+Z5 !s90 -incr|-mfcu|-work|xil_defaultlib|+incdir+../../../../lcd_touchpad.gen/sources_1/ip/clk_wiz_0|+incdir+../../../../lcd_touchpad.gen/sources_1/ip/clk_wiz_1|../../../../../../rtl/touch_driver.v|../../../../../../sim/tb_touch_driver.v|
+!i113 0
+Z6 o-mfcu -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -mfcu -work xil_defaultlib +incdir+../../../../lcd_touchpad.gen/sources_1/ip/clk_wiz_0 +incdir+../../../../lcd_touchpad.gen/sources_1/ip/clk_wiz_1 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtouch_driver
+!s10a 1660563781
+!s110 1660563794
+!i10b 1
+!s100 C1QSNe3_P0Q::h=83F^>X3
+IHB[]6h?Y7GISd3aV<9;fK0
+R2
+R0
+w1660563781
+8../../../../../../rtl/touch_driver.v
+F../../../../../../rtl/touch_driver.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1660563794.000000
+R4
+R5
+!i113 0
+R6
+R7
+R1

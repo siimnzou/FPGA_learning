@@ -1,0 +1,27 @@
+# //  ModelSim SE-64 10.6d Feb 24 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_touch_driver_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_touch_driver xil_defaultlib.glbl 
+# Start time: 19:44:07 on Aug 15,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_touch_driver(fast)
+# Loading work.touch_driver(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 19:52:56 on Aug 15,2022, Elapsed time: 0:08:49
+# Errors: 0, Warnings: 0

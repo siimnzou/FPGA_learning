@@ -1,0 +1,383 @@
+
+*** Running vivado
+    with args -log lcd_touchpad.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lcd_touchpad.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source lcd_touchpad.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.srcs/utils_1/imports/synth_1/touch_driver.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.srcs/utils_1/imports/synth_1/touch_driver.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top lcd_touchpad -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25764
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'iic_ctrl' with formal parameter declaration list [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/iic_ctrl.v:27]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'iic_ctrl' with formal parameter declaration list [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/iic_ctrl.v:44]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'touch_driver' with formal parameter declaration list [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/touch_driver.v:33]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1302.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lcd_touchpad' [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/lcd_touchpad.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.runs/synth_1/.Xil/Vivado-24656-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.runs/synth_1/.Xil/Vivado-24656-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.runs/synth_1/.Xil/Vivado-24656-Zou/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.runs/synth_1/.Xil/Vivado-24656-Zou/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'iic_ctrl' [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/iic_ctrl.v:1]
+	Parameter DIV_FREQ bound to: 10'b0011111010 
+INFO: [Synth 8-226] default block is never used [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/iic_ctrl.v:122]
+INFO: [Synth 8-6155] done synthesizing module 'iic_ctrl' (0#1) [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/iic_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'touch_driver' [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/touch_driver.v:1]
+	Parameter DEV_ADDR bound to: 7'b0010100 
+	Parameter ADDR_NUM bound to: 1'b1 
+	Parameter STATE_REG_ADDR bound to: 16'b1000000101001110 
+	Parameter LOC_START_ADDR bound to: 16'b1000000101010000 
+	Parameter CNT_MS_MAX bound to: 16'b1100001101001111 
+	Parameter IIC_GAP bound to: 13'b1001110001000 
+INFO: [Synth 8-6155] done synthesizing module 'touch_driver' (0#1) [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/touch_driver.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_50_to_clk_33' [D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.runs/synth_1/.Xil/Vivado-24656-Zou/realtime/clk_50_to_clk_33_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_50_to_clk_33' (0#1) [D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.runs/synth_1/.Xil/Vivado-24656-Zou/realtime/clk_50_to_clk_33_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'pix_data_gen' [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/pix_data_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pix_data_gen' (0#1) [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/pix_data_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tft_ctrl' [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/tft_ctrl .v:1]
+INFO: [Synth 8-6155] done synthesizing module 'tft_ctrl' (0#1) [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/tft_ctrl .v:1]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_touchpad' (0#1) [D:/xilinx_FPGA_prj/lcd_touchpad/rtl/lcd_touchpad.v:1]
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[18] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[17] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[16] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[9] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[8] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[2] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[1] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[0] driven by constant 0
+WARNING: [Synth 8-7129] Port pix_y[9] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pix_y[8] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pix_y[7] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pix_y[6] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pix_y[5] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pix_y[4] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pix_y[3] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pix_y[2] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pix_y[1] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pix_y[0] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[15] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[14] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[13] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[12] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[11] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[10] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[9] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[8] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[7] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[6] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[5] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[4] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[3] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[2] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[1] in module pix_data_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_y_loc[0] in module pix_data_gen is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1302.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1302.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1302.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1302.812 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_33m_gen'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_33m_gen'
+Parsing XDC File [d:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clk_50m_gen'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clk_50m_gen'
+Parsing XDC File [d:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.gen/sources_1/ip/clk_50_to_clk_33/clk_50_to_clk_33/clk_50_to_clk_33_in_context.xdc] for cell 'clk_50_to_clk_33_inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.gen/sources_1/ip/clk_50_to_clk_33/clk_50_to_clk_33/clk_50_to_clk_33_in_context.xdc] for cell 'clk_50_to_clk_33_inst'
+Parsing XDC File [D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.srcs/constrs_1/new/lcd_touchpad.xdc]
+Finished Parsing XDC File [D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.srcs/constrs_1/new/lcd_touchpad.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.srcs/constrs_1/new/lcd_touchpad.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lcd_touchpad_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lcd_touchpad_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1365.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1365.211 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for clk_33m_gen. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_50m_gen. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_50_to_clk_33_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'iic_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'touch_driver'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'iic_ctrl', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                             0000
+                   START |                             0001 |                             0001
+             WR_DEV_ADDR |                             0010 |                             0010
+                    ACK1 |                             0011 |                             0011
+          WR_DATA_ADDR_H |                             0100 |                             0100
+                    ACK2 |                             0101 |                             0101
+          WR_DATA_ADDR_L |                             0110 |                             0110
+                    ACK3 |                             0111 |                             0111
+                 WR_DATA |                             1000 |                             1000
+                    ACK4 |                             1001 |                             1001
+                  START2 |                             1011 |                             1011
+             RD_DEV_ADDR |                             1100 |                             1100
+                    ACK5 |                             1101 |                             1101
+                 RD_DATA |                             1110 |                             1110
+                    NACK |                             1111 |                             1111
+                    STOP |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                    INIT |                             0010 |                             0010
+                  DETECT |                             0100 |                             0100
+                 GET_LOC |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'touch_driver'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   22 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input   22 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 6     
+	  10 Input   16 Bit        Muxes := 1     
+	  11 Input   16 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 13    
+	  16 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 7     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 45    
+	   3 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[18] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[17] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[16] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[9] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[8] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[2] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[1] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rgb[0] driven by constant 0
+WARNING: [Synth 8-3917] design lcd_touchpad has port tft_rst driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |clk_wiz_0        |         1|
+|2     |clk_wiz_1        |         1|
+|3     |clk_50_to_clk_33 |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |clk_50_to_clk |     1|
+|2     |clk_wiz       |     2|
+|4     |BUFG          |     1|
+|5     |CARRY4        |    35|
+|6     |LUT1          |     6|
+|7     |LUT2          |    70|
+|8     |LUT3          |    55|
+|9     |LUT4          |    54|
+|10    |LUT5          |    46|
+|11    |LUT6          |   152|
+|12    |MUXF7         |     2|
+|13    |FDCE          |   245|
+|14    |FDPE          |     3|
+|15    |FDRE          |     1|
+|16    |IBUF          |     2|
+|17    |IOBUF         |     1|
+|18    |OBUF          |    32|
+|19    |OBUFT         |     1|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1365.211 ; gain = 62.398
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1365.211 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1365.211 ; gain = 62.398
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1365.211 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+Synth Design complete, checksum: 756c1e88
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1365.211 ; gain = 62.398
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.runs/synth_1/lcd_touchpad.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lcd_touchpad_utilization_synth.rpt -pb lcd_touchpad_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 15 20:07:13 2022...

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_FPGA_prj/lcd_touchpad/rtl/touch_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module touch_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_FPGA_prj/lcd_touchpad/prj/lcd_touchpad/lcd_touchpad.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

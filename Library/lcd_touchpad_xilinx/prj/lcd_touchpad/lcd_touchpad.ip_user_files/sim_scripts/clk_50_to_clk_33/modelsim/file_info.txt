@@ -1,0 +1,5 @@
+fifo_generator_vlog_beh.v,verilog,fifo_generator_v13_2_7,../../../ipstatic/simulation/fifo_generator_vlog_beh.v,
+fifo_generator_v13_2_rfs.vhd,vhdl,fifo_generator_v13_2_7,../../../ipstatic/hdl/fifo_generator_v13_2_rfs.vhd,
+fifo_generator_v13_2_rfs.v,verilog,fifo_generator_v13_2_7,../../../ipstatic/hdl/fifo_generator_v13_2_rfs.v,
+clk_50_to_clk_33.v,verilog,xil_defaultlib,../../../../lcd_touchpad.gen/sources_1/ip/clk_50_to_clk_33/sim/clk_50_to_clk_33.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

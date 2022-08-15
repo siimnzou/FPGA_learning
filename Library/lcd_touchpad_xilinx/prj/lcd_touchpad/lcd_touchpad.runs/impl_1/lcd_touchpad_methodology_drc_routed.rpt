@@ -1,0 +1,97 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Aug 15 20:08:08 2022
+| Host         : Zou running 64-bit major release  (build 9200)
+| Command      : report_methodology -file lcd_touchpad_methodology_drc_routed.rpt -pb lcd_touchpad_methodology_drc_routed.pb -rpx lcd_touchpad_methodology_drc_routed.rpx
+| Design       : lcd_touchpad
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 9
++-----------+------------------+-------------------------------------------+------------+
+| Rule      | Severity         | Description                               | Violations |
++-----------+------------------+-------------------------------------------+------------+
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin | 2          |
+| HPDR-1    | Warning          | Port pin direction inconsistency          | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert              | 1          |
+| TIMING-18 | Warning          | Missing input or output delay             | 5          |
++-----------+------------------+-------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock clk_33m_gen/inst/clk_in1 is created on an inappropriate internal pin clk_33m_gen/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+TIMING-27#2 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock clk_50m_gen/inst/clk_in1 is created on an inappropriate internal pin clk_50m_gen/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+HPDR-1#1 Warning
+Port pin direction inconsistency  
+Hierarchical port(pin) touch_init direction INOUT is not consistent with the directions of the cell pins/ports found at that level of the netlist hierarchy. Please review the design and consider changing the port(pin) direction. Both drivers and loads were expected for the net (touch_init) connected to this Port, but both were not found.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell touch_driver_inst/state[3]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) touch_driver_inst/wr_en_cnt_reg[11]/CLR,
+touch_driver_inst/wr_en_cnt_reg[12]/CLR,
+touch_driver_inst/wr_en_cnt_reg[13]/CLR,
+touch_driver_inst/wr_en_cnt_reg[14]/CLR,
+touch_driver_inst/wr_en_cnt_reg[15]/CLR,
+touch_driver_inst/wr_en_cnt_reg[1]/CLR,
+touch_driver_inst/wr_en_cnt_reg[2]/CLR,
+touch_driver_inst/wr_en_cnt_reg[3]/CLR,
+touch_driver_inst/wr_en_cnt_reg[4]/CLR,
+touch_driver_inst/wr_en_cnt_reg[5]/CLR,
+touch_driver_inst/wr_en_cnt_reg[6]/CLR,
+touch_driver_inst/wr_en_cnt_reg[7]/CLR,
+touch_driver_inst/wr_en_cnt_reg[8]/CLR,
+touch_driver_inst/wr_en_cnt_reg[9]/CLR, touch_driver_inst/wr_en_reg/CLR
+ (the first 15 of 248 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on rst_n relative to clock(s) clk_50m_gen/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on sda relative to clock(s) clk_50m_gen/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on touch_init relative to clock(s) clk_50m_gen/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on scl relative to clock(s) clk_50m_gen/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on touch_reset relative to clock(s) clk_50m_gen/inst/clk_in1
+Related violations: <none>
+
+

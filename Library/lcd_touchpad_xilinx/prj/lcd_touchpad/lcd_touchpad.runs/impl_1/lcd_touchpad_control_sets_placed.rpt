@@ -1,0 +1,99 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Aug 15 20:07:50 2022
+| Host         : Zou running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lcd_touchpad_control_sets_placed.rpt
+| Design       : lcd_touchpad
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    21 |
+|    Minimum number of control sets                        |    21 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    47 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    21 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     5 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              55 |           14 |
+| No           | No                    | Yes                    |             100 |           39 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              42 |            8 |
+| Yes          | No                    | Yes                    |             148 |           43 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+----------------------------------------------------------------------------------------------------+-------------------------+------------------+----------------+--------------+
+|        Clock Signal       |                                            Enable Signal                                           |     Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------+----------------------------------------------------------------------------------------------------+-------------------------+------------------+----------------+--------------+
+|  clk_50m_gen/inst/clk_33m | touch_driver_inst/touch_reset0                                                                     | touch_driver_inst/rst_n |                1 |              1 |         1.00 |
+|  clk_50m_gen/inst/clk_33m | iic_ctrl_inst/cnt_bit[3]_i_1_n_0                                                                   | touch_driver_inst/rst_n |                2 |              4 |         2.00 |
+|  clk_50m_gen/inst/clk_33m | touch_driver_inst/dev_state_reg[7]_i_1_n_0                                                         | touch_driver_inst/rst_n |                2 |              5 |         2.50 |
+|  clk_50m_gen/inst/clk_33m | touch_driver_inst/rd_data_cnt[4]_i_1_n_0                                                           | touch_driver_inst/rst_n |                2 |              5 |         2.50 |
+|  clk_33m_gen/inst/clk_33m | tft_ctrl/E[0]                                                                                      | touch_driver_inst/rst_n |                5 |              7 |         1.40 |
+|  clk_50m_gen/inst/clk_33m | touch_driver_inst/ms_count0                                                                        | touch_driver_inst/rst_n |                3 |              8 |         2.67 |
+|  clk_50m_gen/inst/clk_33m | touch_driver_inst/touch_x_loc1                                                                     | touch_driver_inst/rst_n |                2 |              8 |         4.00 |
+|  clk_50m_gen/inst/clk_33m | touch_driver_inst/touch_y_loc1                                                                     | touch_driver_inst/rst_n |                2 |              8 |         4.00 |
+|  clk_50m_gen/inst/clk_33m | touch_driver_inst/touch_x_loc[15]_i_1_n_0                                                          | touch_driver_inst/rst_n |                1 |              8 |         8.00 |
+|  clk_50m_gen/inst/clk_33m | touch_driver_inst/touch_y_loc[15]_i_1_n_0                                                          | touch_driver_inst/rst_n |                1 |              8 |         8.00 |
+|  clk_33m_gen/inst/clk_33m | tft_ctrl/cnt_v[0]_i_1_n_0                                                                          | touch_driver_inst/rst_n |                3 |             12 |         4.00 |
+|  clk_50m_gen/inst/clk_33m | touch_driver_inst/get_loc_wait_cnt_en_reg_n_0                                                      | touch_driver_inst/rst_n |                4 |             16 |         4.00 |
+|  clk_50m_gen/inst/clk_33m | touch_driver_inst/rd_en_cnt_en                                                                     | touch_driver_inst/rst_n |                4 |             16 |         4.00 |
+|  clk_50m_gen/inst/clk_33m | touch_driver_inst/wr_en_cnt_en                                                                     | touch_driver_inst/rst_n |                4 |             16 |         4.00 |
+|  clk_33m_gen/inst/clk_33m | clk_50_to_clk_33_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/E[0] |                         |                4 |             18 |         4.50 |
+|  clk_50m_gen/inst/clk_33m | clk_50_to_clk_33_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0] |                         |                4 |             24 |         6.00 |
+|  clk_33m_gen/inst/clk_33m | pix_data_gen_inst/cnt_s_en                                                                         | touch_driver_inst/rst_n |                7 |             26 |         3.71 |
+|  clk_33m_gen/inst/clk_33m |                                                                                                    |                         |                7 |             27 |         3.86 |
+|  clk_50m_gen/inst/clk_33m |                                                                                                    |                         |                7 |             28 |         4.00 |
+|  clk_33m_gen/inst/clk_33m |                                                                                                    | touch_driver_inst/rst_n |               15 |             40 |         2.67 |
+|  clk_50m_gen/inst/clk_33m |                                                                                                    | touch_driver_inst/rst_n |               24 |             60 |         2.50 |
++---------------------------+----------------------------------------------------------------------------------------------------+-------------------------+------------------+----------------+--------------+
+
+
