@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../rtl/MDIO/mdio_driver.v" \
+"../../../../../../sim/mdio_slave_interface.v" \
+"../../../../../../sim/tb_mdio_dri.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

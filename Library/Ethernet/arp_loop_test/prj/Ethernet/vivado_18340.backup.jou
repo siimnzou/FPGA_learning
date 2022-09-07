@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Aug 21 23:28:49 2022
+# Process ID: 18340
+# Current directory: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22208 D:\xilinx_FPGA_prj\FPGA\Ethernet\prj\Ethernet\Ethernet.xpr
+# Log file: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/vivado.log
+# Journal file: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet\vivado.jou
+# Running On: Zou, OS: Windows, CPU Frequency: 3686 MHz, CPU Physical cores: 10, Host memory: 34212 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.xpr
+update_compile_order -fileset sources_1
+launch_simulation -install_path E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64
+launch_simulation -install_path E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64

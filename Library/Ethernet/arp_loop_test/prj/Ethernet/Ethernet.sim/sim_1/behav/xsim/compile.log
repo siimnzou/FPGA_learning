@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_FPGA_prj/Ethernet/rtl/MDIO/mdio_driver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mdio_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_FPGA_prj/Ethernet/sim/mdio_slave_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mdio_slave_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_FPGA_prj/Ethernet/sim/tb_mdio_dri.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mdio_dri
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_FPGA_prj/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

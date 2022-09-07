@@ -1,0 +1,1973 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Sep  6 10:08:57 2022
+# Process ID: 2508
+# Current directory: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14728 D:\xilinx_FPGA_prj\FPGA\Ethernet\prj\Ethernet\Ethernet.xpr
+# Log file: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/vivado.log
+# Journal file: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet\vivado.jou
+# Running On: Zou, OS: Windows, CPU Frequency: 3686 MHz, CPU Physical cores: 10, Host memory: 34212 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_arp_rx'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-49] Using simulator executables from 'E:\FPGA_ModelSim_simulation\Modelsim10\ModelSim\Modelsim\win64'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx_FPGA_prj/modelsim_lib/modelsim.ini' copied to run dir:'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_arp_rx' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Reading E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/tcl/vsim/pref.tcl
+
+# 10.6d
+
+# do {tb_arp_rx_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx_FPGA_prj\modelsim_lib\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:09:33 on Sep 06,2022
+# vlog -incr -mfcu -work xil_defaultlib ../../../../../../rtl/ARP/arp_rx.v ../../../../../../sim/tb_arp_rx.v 
+# -- Skipping module arp_rx
+# -- Skipping module tb_arp_rx
+# 
+# Top level modules:
+# 	tb_arp_rx
+# End time: 10:09:33 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:09:33 on Sep 06,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:09:33 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Program launched (PID=18824)
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_arp_rx'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-49] Using simulator executables from 'E:\FPGA_ModelSim_simulation\Modelsim10\ModelSim\Modelsim\win64'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx_FPGA_prj/modelsim_lib/modelsim.ini' copied to run dir:'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_arp_rx' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Reading E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/tcl/vsim/pref.tcl
+
+# 10.6d
+
+# do {tb_arp_rx_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx_FPGA_prj\modelsim_lib\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:14:37 on Sep 06,2022
+# vlog -incr -mfcu -work xil_defaultlib ../../../../../../rtl/ARP/arp_rx.v ../../../../../../sim/tb_arp_rx.v 
+# -- Compiling module arp_rx
+# -- Skipping module tb_arp_rx
+# 
+# Top level modules:
+# 	tb_arp_rx
+# End time: 10:14:37 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:14:37 on Sep 06,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:14:37 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Program launched (PID=10472)
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_arp_rx'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-49] Using simulator executables from 'E:\FPGA_ModelSim_simulation\Modelsim10\ModelSim\Modelsim\win64'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx_FPGA_prj/modelsim_lib/modelsim.ini' copied to run dir:'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_arp_rx' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Reading E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/tcl/vsim/pref.tcl
+
+# 10.6d
+
+# do {tb_arp_rx_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx_FPGA_prj\modelsim_lib\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:23:59 on Sep 06,2022
+# vlog -incr -mfcu -work xil_defaultlib ../../../../../../rtl/ARP/arp_rx.v ../../../../../../sim/tb_arp_rx.v 
+# -- Compiling module arp_rx
+# -- Skipping module tb_arp_rx
+# 
+# Top level modules:
+# 	tb_arp_rx
+# End time: 10:23:59 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:23:59 on Sep 06,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:23:59 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Program launched (PID=15884)
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_arp_rx'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-49] Using simulator executables from 'E:\FPGA_ModelSim_simulation\Modelsim10\ModelSim\Modelsim\win64'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx_FPGA_prj/modelsim_lib/modelsim.ini' copied to run dir:'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_arp_rx' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Reading E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/tcl/vsim/pref.tcl
+
+# 10.6d
+
+# do {tb_arp_rx_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx_FPGA_prj\modelsim_lib\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:33:42 on Sep 06,2022
+# vlog -incr -mfcu -work xil_defaultlib ../../../../../../rtl/ARP/arp_rx.v ../../../../../../sim/tb_arp_rx.v 
+# -- Compiling module arp_rx
+# -- Skipping module tb_arp_rx
+# 
+# Top level modules:
+# 	tb_arp_rx
+# End time: 10:33:42 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:33:42 on Sep 06,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:33:42 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Program launched (PID=19492)
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_arp_rx'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-49] Using simulator executables from 'E:\FPGA_ModelSim_simulation\Modelsim10\ModelSim\Modelsim\win64'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx_FPGA_prj/modelsim_lib/modelsim.ini' copied to run dir:'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_arp_rx' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Reading E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/tcl/vsim/pref.tcl
+
+# 10.6d
+
+# do {tb_arp_rx_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx_FPGA_prj\modelsim_lib\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:43:53 on Sep 06,2022
+# vlog -incr -mfcu -work xil_defaultlib ../../../../../../rtl/ARP/arp_rx.v ../../../../../../sim/tb_arp_rx.v 
+# -- Compiling module arp_rx
+# -- Skipping module tb_arp_rx
+# 
+# Top level modules:
+# 	tb_arp_rx
+# End time: 10:43:53 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:43:53 on Sep 06,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:43:53 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Program launched (PID=11296)
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_arp_rx'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-49] Using simulator executables from 'E:\FPGA_ModelSim_simulation\Modelsim10\ModelSim\Modelsim\win64'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx_FPGA_prj/modelsim_lib/modelsim.ini' copied to run dir:'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_arp_rx' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Reading E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/tcl/vsim/pref.tcl
+
+# 10.6d
+
+# do {tb_arp_rx_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx_FPGA_prj\modelsim_lib\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:56:29 on Sep 06,2022
+# vlog -incr -mfcu -work xil_defaultlib ../../../../../../rtl/ARP/arp_rx.v ../../../../../../sim/tb_arp_rx.v 
+# -- Compiling module arp_rx
+# -- Skipping module tb_arp_rx
+# 
+# Top level modules:
+# 	tb_arp_rx
+# End time: 10:56:29 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:56:29 on Sep 06,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:56:29 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Program launched (PID=10368)
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_arp_rx'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-49] Using simulator executables from 'E:\FPGA_ModelSim_simulation\Modelsim10\ModelSim\Modelsim\win64'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx_FPGA_prj/modelsim_lib/modelsim.ini' copied to run dir:'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_arp_rx' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Reading E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/tcl/vsim/pref.tcl
+
+# 10.6d
+
+# do {tb_arp_rx_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx_FPGA_prj\modelsim_lib\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:23:52 on Sep 06,2022
+# vlog -incr -mfcu -work xil_defaultlib ../../../../../../rtl/ARP/arp_rx.v ../../../../../../sim/tb_arp_rx.v 
+# -- Skipping module arp_rx
+# -- Skipping module tb_arp_rx
+# 
+# Top level modules:
+# 	tb_arp_rx
+# End time: 11:23:53 on Sep 06,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:23:53 on Sep 06,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 11:23:53 on Sep 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+Program launched (PID=16204)
+add_files -norecurse {D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 15:43:33 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+set_property top arp_tx [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_rx.dcp
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 15:44:59 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 15:54:38 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 15:55:40 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_tx.dcp
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 15:56:29 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_tx.dcp
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 15:57:18 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_tx.dcp
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 16:01:19 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-2
+Top: arp_tx
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_tx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2306.684 ; gain = 386.684
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:253]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+WARNING: [Synth 8-7129] Port crc_data[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[24] in module arp_tx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2397.359 ; gain = 477.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2397.359 ; gain = 477.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2397.359 ; gain = 477.359
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2397.359 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2467.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2575.387 ; gain = 655.387
+6 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2575.387 ; gain = 1017.688
+add_files -norecurse D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v
+update_compile_order -fileset sources_1
+set_property top arp [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_tx.dcp
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 20:04:36 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+refresh_design
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:31]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:33]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_tx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2631.535 ; gain = 23.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:253]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+WARNING: [Synth 8-6104] Input port 'gmii_tx_dv' has an internal driver [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:85]
+WARNING: [Synth 8-6104] Input port 'gmii_tx_data' has an internal driver [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:86]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+WARNING: [Synth 8-3848] Net clk in module/entity arp does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:94]
+WARNING: [Synth 8-7129] Port crc_data[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[24] in module arp_tx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2719.496 ; gain = 111.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2740.406 ; gain = 132.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2740.406 ; gain = 132.824
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2760.270 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2760.270 ; gain = 152.688
+refresh_design
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:31]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:33]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_tx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2760.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:253]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+WARNING: [Synth 8-6104] Input port 'gmii_tx_dv' has an internal driver [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:85]
+WARNING: [Synth 8-6104] Input port 'gmii_tx_data' has an internal driver [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:86]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+WARNING: [Synth 8-3848] Net clk in module/entity arp does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:94]
+WARNING: [Synth 8-7129] Port crc_data[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[24] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[47] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[46] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[45] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[44] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[43] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[42] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[41] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[40] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[39] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[38] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[37] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[36] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[35] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[34] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[33] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[32] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[31] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[30] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[29] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[28] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[27] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[26] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[25] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[24] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[23] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[22] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[21] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[20] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[19] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[18] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[17] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[16] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[15] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[14] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[13] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[12] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[11] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[10] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[9] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[8] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[7] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[6] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[5] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[4] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[3] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[2] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[1] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_mac[0] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[31] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[30] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[29] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[28] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[27] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[26] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[25] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[24] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[23] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[22] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[21] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[20] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[19] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[18] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[17] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[16] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[15] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[14] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[13] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[12] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[11] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[10] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[9] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[8] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[7] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[6] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[5] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[4] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[3] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[2] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[1] in module arp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[0] in module arp is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2760.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2780.855 ; gain = 20.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2780.855 ; gain = 20.586
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2798.281 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2798.281 ; gain = 38.012
+add_files -norecurse {D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v}
+WARNING: [filemgmt 56-12] File 'D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sources_1
+set_property top arp_loop_top [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp.dcp
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 21:31:25 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 21:32:54 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 21:35:22 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_loop_top.dcp
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 21:38:48 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+refresh_design
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:31]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:33]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_tx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2798.281 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arp_loop_top' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'key_filter' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+	Parameter CNT_MAX bound to: 20'b11110100001000111111 
+INFO: [Synth 8-6155] done synthesizing module 'key_filter' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gmii2rgmii' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'gmii2rgmii' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'rgmii_txd' does not match port width (4) of module 'gmii2rgmii' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:83]
+INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+WARNING: [Synth 8-6104] Input port 'gmii_tx_dv' has an internal driver [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:85]
+WARNING: [Synth 8-6104] Input port 'gmii_tx_data' has an internal driver [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:86]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+WARNING: [Synth 8-689] width (1) of port connection 'source_mac' does not match port width (48) of module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:122]
+WARNING: [Synth 8-689] width (1) of port connection 'source_ip' does not match port width (32) of module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'arp_loop_top' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+WARNING: [Synth 8-3848] Net clk in module/entity arp does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:94]
+WARNING: [Synth 8-3848] Net eth_txc in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:10]
+WARNING: [Synth 8-3848] Net eth_tx_ctl in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:11]
+WARNING: [Synth 8-3848] Net eth_txd in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:12]
+WARNING: [Synth 8-3848] Net sys_rst_n in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:55]
+WARNING: [Synth 8-3848] Net key_in in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:56]
+WARNING: [Synth 8-3848] Net gmii_tx_dv in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:71]
+WARNING: [Synth 8-3848] Net rgmii_rxc in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:78]
+WARNING: [Synth 8-3848] Net rgmii_rx_ctl in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:79]
+WARNING: [Synth 8-3848] Net rgmii_rxd in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:80]
+WARNING: [Synth 8-3848] Net gmii_rx_data in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:110]
+WARNING: [Synth 8-3848] Net gmii_tx_data in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:113]
+WARNING: [Synth 8-3848] Net clk_200m in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:24]
+WARNING: [Synth 8-3848] Net gmii_txd in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:31]
+WARNING: [Synth 8-3848] Net src_mac in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:35]
+WARNING: [Synth 8-3848] Net src_ip in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:36]
+WARNING: [Synth 8-7129] Port crc_data[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[24] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eth_txc in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eth_tx_ctl in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eth_txd[3] in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eth_txd[2] in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eth_txd[1] in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eth_txd[0] in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_in in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eth_rxc in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eth_rx_ctl in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eth_rxd[3] in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eth_rxd[2] in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eth_rxd[1] in module arp_loop_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eth_rxd[0] in module arp_loop_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2798.281 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2798.281 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2798.281 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2804.473 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2804.473 ; gain = 6.191
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0
+set_property -dict [list CONFIG.PRIM_IN_FREQ {50.000} CONFIG.CLK_OUT1_PORT {clk_200m} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200.000} CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.MMCM_CLKFBOUT_MULT_F {20.000} CONFIG.MMCM_CLKIN1_PERIOD {20.000} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.CLKOUT1_JITTER {142.107} CONFIG.CLKOUT1_PHASE_ERROR {164.985}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs clk_wiz_0_synth_1 -jobs 16
+[Tue Sep  6 21:46:19 2022] Launched clk_wiz_0_synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.ip_user_files -ipstatic_source_dir D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx_FPGA_prj/modelsim_lib} {questa=D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.cache/compile_simlib/questa} {riviera=D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.cache/compile_simlib/riviera} {activehdl=D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_loop_top.dcp
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 21:50:18 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+refresh_design
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:31]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:33]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_tx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2814.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arp_loop_top' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'key_filter' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+	Parameter CNT_MAX bound to: 20'b11110100001000111111 
+INFO: [Synth 8-6155] done synthesizing module 'key_filter' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gmii2rgmii' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'gmii2rgmii' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+WARNING: [Synth 8-6104] Input port 'gmii_tx_dv' has an internal driver [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:85]
+WARNING: [Synth 8-6104] Input port 'gmii_tx_data' has an internal driver [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:86]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+WARNING: [Synth 8-689] width (1) of port connection 'source_mac' does not match port width (48) of module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:135]
+WARNING: [Synth 8-689] width (1) of port connection 'source_ip' does not match port width (32) of module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'arp_loop_top' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+WARNING: [Synth 8-3848] Net clk in module/entity arp does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:94]
+WARNING: [Synth 8-3848] Net gmii_tx_dv in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:84]
+WARNING: [Synth 8-3848] Net gmii_txd in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:31]
+WARNING: [Synth 8-3848] Net key_in in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:69]
+WARNING: [Synth 8-3848] Net gmii_rx_data in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:123]
+WARNING: [Synth 8-3848] Net gmii_tx_data in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:126]
+WARNING: [Synth 8-3848] Net src_mac in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:35]
+WARNING: [Synth 8-3848] Net src_ip in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:36]
+WARNING: [Synth 8-7129] Port crc_data[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[24] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_in in module arp_loop_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2843.777 ; gain = 29.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2867.656 ; gain = 52.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2867.656 ; gain = 52.934
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_driven_clk'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2894.609 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arp_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arp_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2894.609 ; gain = 79.887
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_loop_top.dcp
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 21:58:49 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+refresh_design
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:31]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:33]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_tx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2894.609 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arp_loop_top' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'key_filter' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+	Parameter CNT_MAX bound to: 20'b11110100001000111111 
+INFO: [Synth 8-6155] done synthesizing module 'key_filter' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gmii2rgmii' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'gmii2rgmii' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+WARNING: [Synth 8-689] width (1) of port connection 'source_mac' does not match port width (48) of module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:135]
+WARNING: [Synth 8-689] width (1) of port connection 'source_ip' does not match port width (32) of module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'arp_loop_top' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+WARNING: [Synth 8-3848] Net clk in module/entity arp does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:94]
+WARNING: [Synth 8-3848] Net src_mac in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:35]
+WARNING: [Synth 8-3848] Net src_ip in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:36]
+WARNING: [Synth 8-3848] Net key_in in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:69]
+WARNING: [Synth 8-7129] Port crc_data[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[24] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_in in module arp_loop_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2894.609 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2909.145 ; gain = 14.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2909.145 ; gain = 14.535
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_driven_clk'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2927.457 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arp_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arp_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2927.457 ; gain = 32.848
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_loop_top.dcp
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 22:04:20 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+refresh_design
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:31]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:33]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_tx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:39]
+CRITICAL WARNING: [Synth 8-9339] data object 'source_mac' is already declared [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:36]
+INFO: [Synth 8-6826] previous declaration of 'source_mac' is from here [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:35]
+CRITICAL WARNING: [Synth 8-10006] second declaration of 'source_mac' ignored [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:36]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2927.457 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arp_loop_top' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'key_filter' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+	Parameter CNT_MAX bound to: 20'b11110100001000111111 
+INFO: [Synth 8-6155] done synthesizing module 'key_filter' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gmii2rgmii' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'gmii2rgmii' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+WARNING: [Synth 8-689] width (1) of port connection 'source_ip' does not match port width (32) of module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'arp_loop_top' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+WARNING: [Synth 8-3848] Net clk in module/entity arp does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:94]
+WARNING: [Synth 8-3848] Net key_in in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:69]
+WARNING: [Synth 8-7129] Port crc_data[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[24] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_in in module arp_loop_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2927.457 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2927.457 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2927.457 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_driven_clk'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2951.547 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arp_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arp_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2951.547 ; gain = 24.090
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_loop_top.dcp
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 22:05:37 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+refresh_design
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:31]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:33]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_tx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2951.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arp_loop_top' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'key_filter' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+	Parameter CNT_MAX bound to: 20'b11110100001000111111 
+INFO: [Synth 8-6155] done synthesizing module 'key_filter' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gmii2rgmii' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'gmii2rgmii' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_loop_top' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+WARNING: [Synth 8-3848] Net clk in module/entity arp does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:94]
+WARNING: [Synth 8-3848] Net key_in in module/entity arp_loop_top does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:69]
+WARNING: [Synth 8-7129] Port crc_data[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[24] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_in in module arp_loop_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2951.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2951.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2951.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_driven_clk'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2958.215 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arp_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arp_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2958.215 ; gain = 6.668
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_loop_top.dcp
+launch_runs synth_1 -jobs 16
+[Tue Sep  6 22:08:08 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+refresh_design
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:31]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:33]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_tx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2981.258 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arp_loop_top' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'key_filter' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+	Parameter CNT_MAX bound to: 20'b11110100001000111111 
+INFO: [Synth 8-6155] done synthesizing module 'key_filter' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gmii2rgmii' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'gmii2rgmii' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_loop_top' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+WARNING: [Synth 8-3848] Net clk in module/entity arp does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:94]
+WARNING: [Synth 8-7129] Port crc_data[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[24] in module arp_tx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2981.258 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2981.258 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2981.258 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_driven_clk'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2989.695 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arp_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arp_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2989.695 ; gain = 8.438
+refresh_design
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:31]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:33]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_tx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2989.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arp_loop_top' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'key_filter' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+	Parameter CNT_MAX bound to: 20'b11110100001000111111 
+INFO: [Synth 8-6155] done synthesizing module 'key_filter' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/key_filter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gmii2rgmii' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'gmii2rgmii' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_loop_top' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+WARNING: [Synth 8-3848] Net clk in module/entity arp does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:94]
+WARNING: [Synth 8-7129] Port crc_data[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[24] in module arp_tx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2989.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2989.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2989.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_driven_clk'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2999.660 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arp_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arp_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2999.660 ; gain = 9.965
+file mkdir D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1
+file mkdir D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new
+close [ open D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc w ]
+add_files -fileset constrs_1 D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arp_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arp_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'sys_clk' completely overrides clock 'clk'.
+New: create_clock -period 20.000 -name sys_clk [get_ports clk], [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc:1]
+Previous: create_clock -period 20.000 [get_ports clk], [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command 'set_property -dict {PACKAGE_PIN L14 IOSTANDARD LVCMOS33} [get_ports {touch_in]' found in constraint file. [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc:21]
+Finished Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+Completed Processing XDC Constraints
+
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arp_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arp_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc:1]
+CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command 'set_property -dict {PACKAGE_PIN L14 IOSTANDARD LVCMOS33} [get_ports {touch_in]' found in constraint file. [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc:21]
+Finished Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+Completed Processing XDC Constraints
+
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arp_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arp_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc:1]
+Finished Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+Completed Processing XDC Constraints
+
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_loop_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Sep  6 22:15:53 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+[Tue Sep  6 22:15:53 2022] Launched impl_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/impl_1/runme.log
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arp_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arp_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc:1]
+Finished Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+Completed Processing XDC Constraints
+
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.1
+  **** Build date : Apr 18 2022 at 16:02:36
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.1.0
+  ****** Build date   : Apr 13 2022-03:12:08
+    **** Build number : 2022.1.1649790728
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3017.543 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/impl_1/arp_loop_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/impl_1/arp_loop_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_loop_top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Sep  6 22:38:03 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+[Tue Sep  6 22:38:03 2022] Launched impl_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/impl_1/arp_loop_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+refresh_design
+ERROR: [Synth 8-2715] syntax error near rst_n [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:26]
+WARNING: [Synth 8-9400] empty statement in always construct [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:26]
+WARNING: [Synth 8-9926] potential always loop found [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:26]
+ERROR: [Synth 8-8896] 'rst_n' is an unknown type [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:28]
+ERROR: [Synth 8-8896] 'touch_in_ff2' is an unknown type [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:29]
+ERROR: [Synth 8-8896] 'touch_in_ff' is an unknown type [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:32]
+ERROR: [Synth 8-8896] 'touch_in_ff2' is an unknown type [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:33]
+INFO: [Synth 8-8750] module 'arp_ctrl' ignored due to previous errors [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:62]
+Failed to read verilog 'D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v'
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:31]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:33]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_tx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 5239.824 ; gain = 12.109
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arp_loop_top' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'gmii2rgmii' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'gmii2rgmii' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_loop_top' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+WARNING: [Synth 8-3848] Net clk in module/entity arp does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:94]
+WARNING: [Synth 8-7129] Port crc_data[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[24] in module arp_tx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 5292.047 ; gain = 64.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 5315.941 ; gain = 88.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 5315.941 ; gain = 88.227
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_driven_clk'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 5339.465 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arp_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arp_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc:1]
+Finished Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 5353.344 ; gain = 125.629
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_loop_top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Sep  6 22:51:34 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+[Tue Sep  6 22:51:34 2022] Launched impl_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/impl_1/arp_loop_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Project 1-454] Reading design checkpoint 'd:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_driven_clk'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 5359.199 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon. [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Common 17-344] 'get_clocks' was cancelled [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 5780.324 ; gain = 426.980
+INFO: [Common 17-344] 'open_run' was cancelled
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/arp_loop_top.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Sep  6 23:17:36 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+[Tue Sep  6 23:17:36 2022] Launched impl_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/impl_1/runme.log
+refresh_design
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:31]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_rx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:33]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'arp_tx' with formal parameter declaration list [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 5780.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arp_loop_top' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/.Xil/Vivado-2508-Zou/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'gmii2rgmii' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57177]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/rgmii_tx.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'gmii2rgmii' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/gmii2rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_ctrl.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_tx.v:11]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/crc32_d8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'arp_loop_top' (0#1) [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_loop_top.v:1]
+WARNING: [Synth 8-3848] Net clk in module/entity arp does not have driver. [D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp.v:94]
+WARNING: [Synth 8-7129] Port crc_data[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data[24] in module arp_tx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 5801.926 ; gain = 21.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 5824.793 ; gain = 44.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 5824.793 ; gain = 44.469
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_driven_clk'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 5848.344 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_driven_clk/inst'
+Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+Finished Parsing XDC File [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_driven_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arp_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arp_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc:1]
+Finished Parsing XDC File [D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 5848.344 ; gain = 68.020
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/impl_1/arp_loop_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+place_ports touch_in F16
+set_property target_constrs_file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/constrs_1/new/pin.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Tue Sep  6 23:22:59 2022] Launched impl_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/impl_1/arp_loop_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/impl_1/arp_loop_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  7 00:24:25 2022...

@@ -1,0 +1,18 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mdio_dri_behav xil_defaultlib.tb_mdio_dri xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'mdio_driver' does not have a parameter named CLK_DIV [D:/xilinx_FPGA_prj/Ethernet/sim/tb_mdio_dri.v:151]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/xilinx_FPGA_prj/Ethernet/rtl/MDIO/mdio_driver.v" Line 1. Module mdio_driver doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/xilinx_FPGA_prj/Ethernet/rtl/MDIO/mdio_driver.v" Line 1. Module mdio_driver doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mdio_driver
+Compiling module xil_defaultlib.mdio_slave_interface
+Compiling module xil_defaultlib.tb_mdio_dri
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mdio_dri_behav

@@ -1,0 +1,148 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Aug 21 19:40:35 2022
+# Process ID: 17548
+# Current directory: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7020 D:\xilinx_FPGA_prj\FPGA\Ethernet\prj\Ethernet\Ethernet.xpr
+# Log file: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/vivado.log
+# Journal file: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet\vivado.jou
+# Running On: Zou, OS: Windows, CPU Frequency: 3686 MHz, CPU Physical cores: 10, Host memory: 34212 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'D:/xilinx_FPGA_prj/Ethernet/prj/Ethernet' since last save.
+INFO: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.gen/sources_1', nor could it be found using path 'D:/xilinx_FPGA_prj/Ethernet/prj/Ethernet/Ethernet.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/FPGA_xilinx_vivado_newversion/Vivado/2022.1/data/ip'.
+update_compile_order -fileset sources_1
+add_files -norecurse D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/ARP/arp_rx.v
+update_compile_order -fileset sources_1
+set_property top arp_rx [current_fileset]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.srcs/utils_1/imports/synth_1/mdio_driver.dcp with file D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/mdio_driver.dcp
+launch_runs synth_1 -jobs 16
+[Sun Aug 21 21:55:21 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Aug 21 21:56:23 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.runs/synth_1/runme.log
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/MDIO/mdio_driver.v] -no_script -reset -force -quiet
+remove_files  D:/xilinx_FPGA_prj/FPGA/Ethernet/rtl/MDIO/mdio_driver.v
+export_ip_user_files -of_objects  [get_files D:/xilinx_FPGA_prj/FPGA/Ethernet/sim/mdio_slave_interface.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/xilinx_FPGA_prj/FPGA/Ethernet/sim/tb_mdio_dri.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {D:/xilinx_FPGA_prj/FPGA/Ethernet/sim/mdio_slave_interface.v D:/xilinx_FPGA_prj/FPGA/Ethernet/sim/tb_mdio_dri.v}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/xilinx_FPGA_prj/FPGA/Ethernet/sim/tb_arp_rx.v
+launch_simulation -install_path E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64
+Command: launch_simulation  -install_path E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64
+INFO: [Vivado 12-12493] Simulation top is 'arp_rx'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+ERROR: [USF-modelsim-25] The INI file specified with the MODELSIM environment variable is not accessible. Please check the file permissions.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+
+    while executing
+"send_msg_id USF-modelsim-025 ERROR  "The INI file specified with the MODELSIM environment variable is not accessible. Please check the file permission..."
+    (procedure "usf_modelsim_verify_compiled_lib" line 21)
+    invoked from within
+"usf_modelsim_verify_compiled_lib"
+    (procedure "usf_modelsim_setup_simulation" line 39)
+    invoked from within
+"usf_modelsim_setup_simulation"
+    (procedure "tclapp::xilinx::modelsim::setup" line 19)
+    invoked from within
+"tclapp::xilinx::modelsim::setup { -simset sim_1 -mode behavioral -run_dir D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/model..."
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation -install_path E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64
+Command: launch_simulation  -install_path E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64
+INFO: [Vivado 12-12493] Simulation top is 'tb_arp_rx'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+ERROR: [USF-modelsim-25] The INI file specified with the MODELSIM environment variable is not accessible. Please check the file permissions.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+
+    while executing
+"send_msg_id USF-modelsim-025 ERROR  "The INI file specified with the MODELSIM environment variable is not accessible. Please check the file permission..."
+    (procedure "usf_modelsim_verify_compiled_lib" line 21)
+    invoked from within
+"usf_modelsim_verify_compiled_lib"
+    (procedure "usf_modelsim_setup_simulation" line 39)
+    invoked from within
+"usf_modelsim_setup_simulation"
+    (procedure "tclapp::xilinx::modelsim::setup" line 19)
+    invoked from within
+"tclapp::xilinx::modelsim::setup { -simset sim_1 -mode behavioral -run_dir D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/model..."
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -install_path E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64
+Command: launch_simulation  -install_path E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64
+INFO: [Vivado 12-12493] Simulation top is 'tb_arp_rx'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+ERROR: [USF-modelsim-25] The INI file specified with the MODELSIM environment variable is not accessible. Please check the file permissions.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+
+    while executing
+"send_msg_id USF-modelsim-025 ERROR  "The INI file specified with the MODELSIM environment variable is not accessible. Please check the file permission..."
+    (procedure "usf_modelsim_verify_compiled_lib" line 21)
+    invoked from within
+"usf_modelsim_verify_compiled_lib"
+    (procedure "usf_modelsim_setup_simulation" line 39)
+    invoked from within
+"usf_modelsim_setup_simulation"
+    (procedure "tclapp::xilinx::modelsim::setup" line 19)
+    invoked from within
+"tclapp::xilinx::modelsim::setup { -simset sim_1 -mode behavioral -run_dir D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/model..."
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -install_path E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64
+Command: launch_simulation  -install_path E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64
+INFO: [Vivado 12-12493] Simulation top is 'tb_arp_rx'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/FPGA_ModelSim_simulation/Modelsim10/ModelSim/Modelsim/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+ERROR: [USF-modelsim-25] The INI file specified with the MODELSIM environment variable is not accessible. Please check the file permissions.
+ERROR: [Common 17-39] 'send_msg_id' failed due to earlier errors.
+
+    while executing
+"send_msg_id USF-modelsim-025 ERROR  "The INI file specified with the MODELSIM environment variable is not accessible. Please check the file permission..."
+    (procedure "usf_modelsim_verify_compiled_lib" line 21)
+    invoked from within
+"usf_modelsim_verify_compiled_lib"
+    (procedure "usf_modelsim_setup_simulation" line 39)
+    invoked from within
+"usf_modelsim_setup_simulation"
+    (procedure "tclapp::xilinx::modelsim::setup" line 19)
+    invoked from within
+"tclapp::xilinx::modelsim::setup { -simset sim_1 -mode behavioral -run_dir D:/xilinx_FPGA_prj/FPGA/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/model..."
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 21 23:28:32 2022...

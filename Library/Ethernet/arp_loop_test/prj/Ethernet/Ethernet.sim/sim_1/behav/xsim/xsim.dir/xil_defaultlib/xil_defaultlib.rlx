@@ -1,0 +1,8 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+D:/xilinx_FPGA_prj/Ethernet/prj/Ethernet/Ethernet.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+D:/xilinx_FPGA_prj/Ethernet/rtl/MDIO/mdio_driver.v,1660708484,verilog,,D:/xilinx_FPGA_prj/Ethernet/sim/mdio_slave_interface.v,,mdio_driver,,,,,,,,
+D:/xilinx_FPGA_prj/Ethernet/sim/mdio_slave_interface.v,1627800670,verilog,,D:/xilinx_FPGA_prj/Ethernet/sim/tb_mdio_dri.v,,mdio_slave_interface,,,,,,,,
+D:/xilinx_FPGA_prj/Ethernet/sim/tb_mdio_dri.v,1660709038,verilog,,,,tb_mdio_dri,,,,,,,,
